@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:gravity="center_vertical"
+    android:background="@drawable/selector_enter">
+
+
+        <ImageView
+            android:id="@+id/image_news"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:scaleType="centerCrop"
+            android:layout_marginLeft="@dimen/px_20"
+            android:layout_marginTop="@dimen/px_20"
+            android:layout_marginBottom="@dimen/px_20"
+            android:src="@drawable/image_hospital" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/px_160"
+        android:layout_toRightOf="@id/image_news"
+        android:layout_marginLeft="@dimen/px_25"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/tv_news_title"
+            android:layout_width="210dp"
+            android:lineSpacingExtra="5dp"
+            android:layout_marginTop="@dimen/px_20"
+            android:layout_marginBottom="@dimen/px_20"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="首都医科大学附属北京同仁医院"
+            android:textColor="@color/black"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textSize="@dimen/px_21" />
+
+        <TextView
+            android:id="@+id/tv_news_sub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="20dp"
+            android:maxLines="2"
+            android:lineSpacingExtra="5dp"
+            android:ellipsize="end"
+            android:text=""
+            android:textColor="@color/top_text"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="1dp"
+        android:background="@color/divider_line" />
+</RelativeLayout>

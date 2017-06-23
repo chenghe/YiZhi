@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/px_180"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/px_25"
+    android:paddingRight="@dimen/px_25"
+    android:paddingTop="@dimen/px_15"
+    android:paddingBottom="@dimen/px_15"
+    android:background="@color/white">
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/image_news"
+        android:layout_width="@dimen/px_140"
+        android:layout_height="@dimen/px_105"
+        android:scaleType="fitXY"
+        android:layout_gravity="center_vertical" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/px_25"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/title_news"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="false"
+            android:text=" "
+            android:textSize="@dimen/px_26"
+            android:maxLines="2"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/abstract_news"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_15"
+            android:textSize="@dimen/px_22"
+            android:singleLine="true"
+            android:text=" "
+            android:textColor="@color/top_text" />
+    </LinearLayout>
+</LinearLayout>

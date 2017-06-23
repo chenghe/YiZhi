@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tl="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/flexible_space_image_height"
+            android:scaleType="centerCrop"
+            android:src="@drawable/detail_bg" />
+
+        <View
+            android:id="@+id/overlay"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/flexible_space_image_height" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/flexible_space_image_height">
+            <TextView
+                android:id="@+id/tv_sub_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="肺楔形及局部切除"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:layout_marginBottom="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_alignParentBottom="true" />
+            <TextView
+                android:id="@+id/tv_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="手术"
+                android:textColor="@color/white"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="40dp"
+                android:textSize="12sp"
+                android:layout_alignParentBottom="true" />
+            <TextView
+                android:id="@+id/tv_label2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="手术"
+                android:textColor="@color/white"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="20dp"
+                android:textSize="12sp"
+                android:visibility="gone"
+                android:layout_alignParentBottom="true" />
+            <LinearLayout
+                android:id="@+id/ll_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="50dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical"
+                android:visibility="gone"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="费用"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="80¥"/>
+                </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/flexible_space_image_height" />
+        </RelativeLayout>
+
+
+        <com.zhongmeban.utils.SlidingTabLayout
+            android:id="@+id/sliding_tabs"
+            tl:tl_tab_padding="22dp"
+            tl:tl_tab_space_equal="true"
+            tl:tl_textSelectColor="#58c4a5"
+            tl:tl_indicator_width="100dp"
+            tl:tl_indicator_color="#58c4a5"
+            tl:tl_textUnselectColor="#66000000"
+            tl:tl_textAllCaps="true"
+            tl:tl_textBold="true"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/white" />
+    </FrameLayout>

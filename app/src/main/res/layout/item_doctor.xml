@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="115dp"
+    android:background="@drawable/selector_enter">
+
+    <ImageView
+        android:id="@+id/iv_avatar"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/doc_list_small" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/iv_avatar"
+        android:text="马晓燕"
+        android:textColor="@color/text_one"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_des"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/tv_name"
+        android:text="主治医师"
+        android:textColor="@color/text_one"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_available"
+        android:layout_width="35dp"
+        android:layout_height="15dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="23dp"
+        android:layout_toRightOf="@+id/tv_des"
+        android:background="@drawable/rounded_corners_bgblue"
+        android:gravity="center"
+        android:text="可手术"
+        android:textColor="@color/white"
+        android:textSize="8sp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_name"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/iv_avatar"
+        android:text="北京朝阳医院"
+        android:textColor="#5c5c5c" />
+
+
+    <me.next.tagview.TagCloudView
+        android:id="@+id/tag_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toRightOf="@+id/iv_avatar"
+        android:layout_alignParentBottom="true"
+        app:tcvItemBorderHorizontal="8dp"
+        app:tcvItemBorderVertical="6dp"
+        app:tcvBorder="8dp"
+        app:tcvBackground="@drawable/background_tag_selector"
+        app:tcvTextColor="#5c799c"
+        app:tcvSingleLine="true"
+        app:tcvCanTagClick="false"
+        app:tcvShowRightImg="false"/>
+
+    <LinearLayout
+        android:id="@+id/ll_comm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="推荐度"
+            android:textColor="@color/text_color1"
+            android:textSize="@dimen/px_14" />
+
+        <TextView
+            android:id="@+id/tv_doct_evaluate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/px_20"
+            android:text="9.1"
+            android:textColor="@color/num_color"
+            android:textSize="@dimen/px_30" />
+    </LinearLayout>
+    <com.zhongmeban.utils.SmoothCheckBox
+        android:id="@+id/checkbox"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginRight="40dp"
+        app:color_checked="#58c4a5"
+        android:layout_weight="1"
+        android:clickable="false"
+        app:can_click="false"
+        android:visibility="gone"/>
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="1dp"
+        android:background="@color/divider_line" />
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginBottom="@dimen/px_10"-->
+    <!--android:layout_toLeftOf="@id/ll_comm"-->
+    <!--android:layout_toRightOf="@id/doct_image"-->
+    <!--android:orientation="vertical"-->
+    <!--android:paddingRight="@dimen/px_10">-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="@dimen/px_15"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/doct_Name"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text=""-->
+    <!--android:textColor="@color/little_black"-->
+    <!--android:textSize="@dimen/px_24" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/doct_title"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="@dimen/px_15"-->
+    <!--android:text=""-->
+    <!--android:singleLine="true"-->
+    <!--android:textColor="@color/little_black"-->
+    <!--android:textSize="@dimen/px_24" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/doct_tab"-->
+    <!--style="@style/tab_bg1"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="@dimen/px_15"-->
+    <!--android:text=""-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:textColor="@color/white"-->
+    <!--android:textSize="@dimen/px_16" />-->
+    <!--</LinearLayout>-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/hosp_name"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="@dimen/px_10"-->
+    <!--android:paddingRight="@dimen/px_2"-->
+    <!--android:singleLine="true"-->
+    <!--android:text=""-->
+    <!--android:textColor="@color/text_color1" />-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="100dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="@dimen/px_10"-->
+    <!--android:layout_marginBottom="@dimen/px_10"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_tab1"-->
+    <!--style="@style/tab_bg2"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text=""-->
+    <!--android:singleLine="true"-->
+    <!--android:textColor="@color/text_color2"-->
+    <!--android:textSize="@dimen/px_20" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_tab2"-->
+    <!--style="@style/tab_bg2"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="@dimen/px_10"-->
+    <!--android:text=""-->
+    <!--android:singleLine="true"-->
+    <!--android:textColor="@color/text_color2"-->
+    <!--android:textSize="@dimen/px_20" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_tab3"-->
+    <!--style="@style/tab_bg2"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="@dimen/px_10"-->
+    <!--android:text=""-->
+    <!--android:singleLine="true"-->
+    <!--android:textColor="@color/text_color2"-->
+    <!--android:textSize="@dimen/px_20" />-->
+
+
+
+    <!--</LinearLayout>-->
+    <!--</LinearLayout>-->
+    <!--</RelativeLayout>-->
+
+
+</RelativeLayout>

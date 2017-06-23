@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rl">
+        <!--<include-->
+        <!--layout="@layout/layout_login_card"-->
+        <!--android:id="@+id/card_login"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:visibility="gone"/>-->
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:id="@+id/id_tab_ll_cure"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/cure"
+                android:layout_width="@dimen/tab_img_size"
+                android:layout_height="@dimen/tab_img_size"
+                android:layout_toRightOf="@+id/heart"
+                android:src="@drawable/cure_selected"/>
+
+            <TextView
+                android:id="@+id/id_tab_tv_cure"
+                android:layout_marginTop="2dp"
+                android:textSize="@dimen/tab_text_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="首页"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/id_tab_ll_attention"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/heart"
+                android:layout_width="@dimen/tab_img_size"
+                android:layout_height="@dimen/tab_img_size"
+                android:layout_gravity="center"
+                android:src="@drawable/heart_normal"/>
+
+            <TextView
+                android:id="@+id/id_tab_tv_attention"
+                android:layout_marginTop="2dp"
+                android:textSize="@dimen/tab_text_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="关注"/>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/id_tab_ll_store"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/bag"
+                android:layout_width="@dimen/tab_img_size"
+                android:layout_height="@dimen/tab_img_size"
+                android:layout_toRightOf="@+id/cure"
+                android:src="@drawable/shopping_normal"/>
+
+            <TextView
+                android:id="@+id/id_tab_tv_store"
+                android:layout_marginTop="2dp"
+                android:textSize="@dimen/tab_text_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="优选"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_my"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_my"
+                android:layout_width="@dimen/tab_img_size"
+                android:layout_height="@dimen/tab_img_size"
+                android:src="@drawable/mine_normal"/>
+
+            <TextView
+                android:id="@+id/tv_my"
+                android:layout_marginTop="2dp"
+                android:textSize="@dimen/tab_text_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_above="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_line" />
+
+</RelativeLayout>

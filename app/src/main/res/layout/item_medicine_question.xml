@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--药品问答item-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/title_bg">
+
+    <TextView
+        android:id="@+id/tv_answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_marginTop="20dp"
+        android:text="哈哈哈哈哈"
+        android:textColor="@color/content_two"/>
+
+    <TextView
+        android:id="@+id/tv_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_below="@+id/tv_answer"
+        android:layout_marginTop="15dp"
+        android:text="哈哈哈哈哈"
+        android:textSize="16sp"
+        android:background="@color/divider_line"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_question"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="10dp"
+        android:gravity="center_vertical"
+        android:layout_alignParentBottom="true">
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:src="@drawable/time_small"/>
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_marginLeft="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2016.3.22"
+        android:textColor="#888888"
+        android:textSize="13sp"/>
+    </LinearLayout>
+</RelativeLayout>

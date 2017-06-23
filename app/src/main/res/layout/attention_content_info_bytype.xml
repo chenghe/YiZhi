@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_info_type"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_type_hosptical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="90dp">
+
+        <ImageView
+            android:id="@+id/iv_type_hosptical"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/hospital_attention_type" />
+
+        <TextView
+            android:id="@+id/tv_hosptical_record_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="25dp"
+            android:layout_toRightOf="@+id/iv_type_hosptical"
+            android:text="入院记录：" />
+
+        <TextView
+            android:id="@+id/tv_hosptical_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="25dp"
+            android:layout_toRightOf="@+id/tv_hosptical_record_title"
+            android:text="2015.9.10 入院-未出院" />
+
+        <TextView
+            android:id="@+id/tv_hosptical_remark_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_hosptical_record_title"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/iv_type_hosptical"
+            android:text="入院备注：" />
+
+        <TextView
+            android:id="@+id/tv_hosptical_remark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_hosptical_record_title"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/tv_hosptical_remark_title"
+            android:text="因腹痛入院" />
+
+        <RelativeLayout
+            android:id="@+id/hosptical_item1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/tv_hosptical_remark"
+            android:layout_toRightOf="@+id/iv_type_hosptical"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/title_bg">
+            <View
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:background="@color/attention_blue"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:text="手术 胸腹联合切口"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:text="2015.9.12"
+                android:textSize="11sp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/hosptical_item2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/hosptical_item1"
+            android:layout_toRightOf="@+id/iv_type_hosptical"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/title_bg">
+            <View
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:background="@color/attention_blue"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:text="手术 胸腹联合切口"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:text="2015.9.12"
+                android:textSize="11sp"/>
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/divider_line" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_type_landmark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="90dp">
+
+        <ImageView
+            android:id="@+id/iv_type_landmark"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/landmark_attention_type" />
+
+        <TextView
+            android:id="@+id/tv_landmark_record_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="25dp"
+            android:layout_toRightOf="@+id/iv_type_landmark"
+            android:text="指标记录：" />
+
+        <TextView
+            android:id="@+id/tv_landmark_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="25dp"
+            android:layout_toRightOf="@+id/tv_landmark_record_title"
+            android:text="2015.1.10" />
+
+        <TextView
+            android:id="@+id/tv_landmark_remark_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_landmark_record_title"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/iv_type_landmark"
+            android:text="指标备注：" />
+
+        <TextView
+            android:id="@+id/tv_landmark_remark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_landmark_record_title"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/tv_landmark_remark_title"
+            android:text="CEA检测" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/divider_line" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_type_lab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="90dp">
+
+        <ImageView
+            android:id="@+id/iv_type_lab"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/lab_attention_type" />
+
+        <TextView
+            android:id="@+id/tv_lab_record_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="25dp"
+            android:layout_toRightOf="@+id/iv_type_lab"
+            android:text="检查记录：" />
+
+        <TextView
+            android:id="@+id/tv_lab_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="25dp"
+            android:layout_toRightOf="@+id/tv_lab_record_title"
+            android:text="2015.1.10" />
+
+        <TextView
+            android:id="@+id/tv_lab_remark_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_lab_record_title"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/iv_type_lab"
+            android:text="检查项目：" />
+
+        <TextView
+            android:id="@+id/tv_lab_remark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_lab_record_title"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/tv_lab_remark_title"
+            android:text="肾功能" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/divider_line" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_type_pill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="90dp">
+
+        <ImageView
+            android:id="@+id/iv_type_pill"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/pil_attention_type" />
+
+        <TextView
+            android:id="@+id/tv_pill_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="25dp"
+            android:layout_toRightOf="@+id/iv_type_pill"
+            android:text="正在服用药品" />
+
+
+        <RelativeLayout
+            android:id="@+id/pill_item1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/tv_pill_record"
+            android:layout_toRightOf="@+id/iv_type_pill"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/title_bg">
+            <View
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:background="@color/attention_pill_color"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:text="爱克兰"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:text="2015.9.12"
+                android:textSize="11sp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/pill_item2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/pill_item1"
+            android:layout_toRightOf="@+id/iv_type_pill"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/title_bg">
+            <View
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:background="@color/attention_pill_color"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:text="善唯达(胶囊)"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:text="2015.9.12"
+                android:textSize="11sp"/>
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/tv_stop_pill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_type_pill"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/pill_item2"
+            android:text="已停止服用药品"/>
+        <RelativeLayout
+            android:id="@+id/pill_item3"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/tv_stop_pill"
+            android:layout_toRightOf="@+id/iv_type_pill"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/title_bg">
+            <View
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:background="@color/attention_pill_color"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:text="多柔比星"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:text="2015.9.12"
+                android:textSize="11sp"/>
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/divider_line" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_type_chemotherapy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="90dp">
+
+        <ImageView
+            android:id="@+id/iv_type_chemotherapy"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/chemotherapy_attention_type" />
+
+        <TextView
+            android:id="@+id/tv_chemotherapy_record_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="25dp"
+            android:layout_toRightOf="@+id/iv_type_chemotherapy"
+            android:text="化疗记录：" />
+
+        <TextView
+            android:id="@+id/tv_chemotherapy_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="25dp"
+            android:layout_toRightOf="@+id/tv_chemotherapy_record_title"
+            android:text="2015.9.10 - 2015.10.11" />
+
+        <TextView
+            android:id="@+id/tv_chemotherapy_remark_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_chemotherapy_record_title"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/iv_type_chemotherapy"
+            android:text="化疗药物：" />
+
+        <TextView
+            android:id="@+id/tv_chemotherapy_remark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_chemotherapy_record_title"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/tv_chemotherapy_remark_title"
+            android:text="吉西他滨" />
+
+        <RelativeLayout
+            android:id="@+id/chemotherapy_item1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/tv_chemotherapy_remark"
+            android:layout_toRightOf="@+id/iv_type_chemotherapy"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/title_bg">
+            <View
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:background="@color/attention_chemotherapy_color"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:text="化疗一"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:text="2015.9.12 - 2015.11.11"
+                android:textSize="11sp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/chemotherapy_item2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/chemotherapy_item1"
+            android:layout_toRightOf="@+id/iv_type_chemotherapy"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/title_bg">
+            <View
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:background="@color/attention_chemotherapy_color"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:text="化疗二"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:text="2015.9.12 - 2015.11.11"
+                android:textSize="11sp"/>
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/tv_chemotherapy_record_title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/iv_type_chemotherapy"
+            android:layout_below="@+id/chemotherapy_item2"
+            android:text="化疗记录：" />
+
+        <TextView
+            android:id="@+id/tv_chemotherapy_record2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/tv_chemotherapy_record_title2"
+            android:layout_below="@+id/chemotherapy_item2"
+            android:text="2015.9.10 - 2015.10.11" />
+
+        <TextView
+            android:id="@+id/tv_chemotherapy_remark_title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_chemotherapy_record_title2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/iv_type_chemotherapy"
+            android:text="化疗药物：" />
+
+        <TextView
+            android:id="@+id/tv_chemotherapy_remark2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_chemotherapy_record_title2"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/tv_chemotherapy_remark_title"
+            android:text="吉西他滨" />
+        <RelativeLayout
+            android:id="@+id/chemotherapy_item3"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/tv_chemotherapy_remark2"
+            android:layout_toRightOf="@+id/iv_type_chemotherapy"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/title_bg">
+            <View
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:background="@color/attention_chemotherapy_color"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:text="化疗一"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:text="2015.9.12 - 2015.11.11"
+                android:textSize="11sp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/chemotherapy_item4"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/chemotherapy_item3"
+            android:layout_toRightOf="@+id/iv_type_chemotherapy"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/title_bg">
+            <View
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:background="@color/attention_chemotherapy_color"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:text="化疗二"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:text="2015.9.12 - 2015.11.11"
+                android:textSize="11sp"/>
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/divider_line" />
+    </RelativeLayout>
+</LinearLayout>
+

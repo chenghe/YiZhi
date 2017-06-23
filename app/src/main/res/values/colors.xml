@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!--友盟分享-->
+    <!--<color name="umeng_socialize_comments_bg">#F4F4F4</color>-->
+    <!--<color name="umeng_socialize_color_group">#2c3035</color>-->
+    <!--<color name="umeng_socialize_list_item_textcolor">#333333</color>-->
+    <!--<color name="umeng_socialize_list_item_bgcolor">#FFFFFF</color>-->
+    <!--<color name="umeng_socialize_divider">#E6E6E6</color>-->
+    <!--<color name="umeng_socialize_text_time">#999999</color>-->
+    <!--<color name="umeng_socialize_text_title">#464f61</color>-->
+    <!--<color name="umeng_socialize_text_friends_list">#959696</color>-->
+    <!--<color name="umeng_socialize_text_share_content">#666666</color>-->
+    <!--<color name="umeng_socialize_ucenter_bg">#EEEEEE</color>-->
+    <!--<color name="umeng_socialize_text_ucenter">#595959</color>-->
+    <!--<color name="umeng_socialize_edit_bg">#C4C4C4</color>-->
+    <!--<color name="umeng_socialize_grid_divider_line">#F8F8F8</color>-->
+    <!--<color name="umeng_socialize_web_bg">#F4F4F4</color>-->
+    <color name="umeng_socialize_shareactivity">#D4E0E5</color>
+    <color name="umeng_socialize_shareactivitydefault">#ffffff</color>
+
+
+    <color name="app_green">#58c4a5</color><!-- 绿色主色 -->
+    <color name="colorPrimary">@color/app_green</color>
+    <color name="colorPrimaryDark">@color/app_green</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="button_red_normanl">#F06060</color>
+    <color name="button_red_press">#EF4F4F</color>
+
+
+    <color name="toolbar_color">#fff</color>
+    <color name="guaid_btn">#77c4d3</color>
+
+    <!-- 自定义的颜色 -->
+    <color name="red">#FF0000</color>
+    <color name="green">#00FF00</color>
+    <color name="blue">#0000FF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+    <color name="old_top_bg">#f6f6f6</color>
+    <color name="gray_c1">#333333</color>
+    <color name="gray_c2">#666666</color>
+    <color name="gray_c3">#999999</color>
+    <color name="gray_c4">#CCCCCC</color>
+    <color name="mian_blue">#77c4d3</color>
+    <color name="text_one">#2a2a2a</color>
+    <color name="text_two">#404040</color>
+    <color name="floating_gray_ripple">#EEEEEE</color>
+    <color name="floating_gray_press">#CCCCCC</color>
+    <color name="floating_green_press">#459981</color>
+    <color name="floating_green_ripple">#4db093</color>
+
+    <!--  自定义背景色值  -->
+    <color name="title_bg">#f6f6f6</color><!-- 顶部背景 -->
+    <color name="most_bg">#e3e3e3</color>  <!-- 大多数背景 -->
+    <color name="title_color">#f6f6f6</color>
+    <color name="top_bg">#f8f8f8</color>  <!-- 背景 -->
+    <color name="calendar_bg">#f9f9f9</color> <!-- 日历大背景 -->
+    <color name="calendar_day_bg">#f5f5f5</color> <!-- 日历每天的背景 -->
+
+
+    <!-- 自定义线色值 -->
+    <color name="divider_line">#ededed</color>  <!-- 分割线 -->
+
+    <!-- 自定义文字色值 -->
+    <color name="title_one">#000000</color> <!-- 一级标题颜色 -->
+    <color name="top_text">#5b5b5b</color> <!-- 顶部文字颜色 -->
+    <color name="content_two">#888888</color> <!-- 二级内容颜色 -->
+    <color name="auxiliary_right">#000000</color> <!-- 右侧辅助色  auxiliary：辅助的意思 -->
+    <color name="annotation_little">#dcdcdc</color> <!-- 时间等小注释色，白色背景用，很少用 -->
+    <color name="top_label_unclick">#adb0b6</color> <!-- 顶部标签未点击颜色 -->
+
+    <color name="btn_indiator">@color/main_color</color><!-- fragment叠加，选中按钮的下划线 -->
+    <color name="green_bg">@color/btn_indiator</color>  <!-- 绿色背景 -->
+    <color name="green_text">#939393</color>
+    <color name="num_color">#F3B562</color>
+
+    <color name="divider_color">@color/top_bg</color>
+    <color name="text_color1">#5c5c5c</color>
+    <color name="text_color2">#5c799c</color>
+    <color name="tab_bg1">#76d5c4</color>
+    <!-- 医生是否可手术tab背景 -->
+    <color name="tab_bg2">#eef5f8</color>
+    <!-- 医生擅长手术tab背景 -->
+
+    <!-- 彩色 -->
+    <color name="main_color">#21b589</color>  <!-- 主色 (默认的文字颜色)-->
+    <color name="little_black">@color/top_text</color>  <!-- 文字显示淡黑色 -->
+
+    <!-- 公共的 -->
+    <color name="tab_main_text_1">#aaa</color>
+    <color name="tab_main_text_2">#74b5f7</color>
+    <color name="tab_top_text_1">#aaa</color>
+    <color name="tab_top_text_2">#000</color>
+    <color name="tab_top2_text_1">#000</color>
+    <color name="tab_top2_text_2">#fff</color>
+    <color name="textcolor_hint">@color/content_two</color>
+    <color name="text_red">#F06060</color>
+    <color name="expend_text_color">#1e7bcd</color>
+
+
+
+    <color name="primary">#2196F3</color>
+    <color name="primary_dark">#1976D2</color>
+    <color name="primary_light">#BBDEFB</color>
+    <color name="accent">#4CAF50</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#727272</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="divider">#B6B6B6</color>
+    <color name="gray">#8c8c8c</color>
+    <color name="gray_deep">#5c5c5c</color>
+    <color name="alpha_gray">#CC646464</color>
+    <color name="attention_blue">#77c4d3</color>
+    <color name="attention_pill_color">#9fb4cc</color>
+    <color name="attention_radiotherapy_color">#91c46c</color>
+    <color name="attention_chemotherapy_color">#f3b562</color>
+    <!-- DropDownMenu -->
+    <color name="no_color">#00000000</color>
+    <color name="choose_eara_item_press_color">#f4f4f4</color>
+    <color name="schedule_text_default">#333333</color>
+    <color name="midmenu">#fafafa</color>
+    <color name="redline">#ff6600</color>
+    <color name="other_day_color">#666666</color>
+    <color name="default_menu_back">#f1f1f1</color>
+    <color name="default_menu_press_back">#fafafa</color>
+</resources>

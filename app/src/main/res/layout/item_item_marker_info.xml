@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="6dp"
+    android:paddingBottom="6dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:descendantFocusability="blocksDescendants"
+    android:background="@drawable/selector_enter">
+
+    <TextView
+        android:focusable="false"
+        android:layout_centerVertical="true"
+        android:id="@+id/tv_marker_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:text="标志物"
+        android:textColor="@color/content_two"/>
+
+    <TextView
+        android:focusable="false"
+        android:id="@+id/tv_marker_id_normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textSize="14sp"
+        android:text="正常value"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/content_two"/>
+
+    <TextView
+
+        android:id="@+id/tv_marker_id_abnormal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="14sp"
+        android:text="异常"
+        android:textColor="@color/red"/>
+
+</RelativeLayout>

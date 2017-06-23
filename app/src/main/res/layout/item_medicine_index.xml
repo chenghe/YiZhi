@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+
+    <TextView
+        android:id="@+id/tv_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="15dp"
+        android:textSize="16sp"
+        android:text="艾司唑仑片"
+        />
+
+    <TextView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_toRightOf="@id/tv_desc"
+        android:text="保"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="8dp"
+        android:textSize="10sp"
+        android:gravity="center"
+        android:background="@drawable/medicine_index_circle"
+        android:textColor="@color/app_green"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="35dp"
+        android:textSize="13sp"
+        android:text="舒乐安定片"
+        android:textColor="@color/content_two"/>
+<TextView
+    android:id="@+id/tv_cost"
+    android:layout_width="wrap_content"
+    android:layout_height="20dp"
+    android:layout_alignParentRight="true"
+    android:layout_centerVertical="true"
+    android:layout_marginRight="20dp"
+    android:text="2800元"
+    android:textColor="@color/num_color"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_line" />
+</RelativeLayout>

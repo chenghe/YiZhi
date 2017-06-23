@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp">
+
+        <ImageView
+            android:id="@+id/id_item_address_select_iv_indicator"
+            android:src="@drawable/choose_address_select"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/id_item_address_select_name"
+            android:layout_toRightOf="@+id/id_item_address_select_iv_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginLeft="8dp"
+            android:text="班德尔科技"
+            android:textColor="@color/text_one"/>
+
+        <TextView
+            android:id="@+id/id_item_address_select_phone"
+            android:layout_toRightOf="@+id/id_item_address_select_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="18618668686"
+            android:textSize="16sp"
+            android:textColor="@color/text_one"/>
+
+
+
+
+        <TextView
+            android:layout_below="@+id/id_item_address_select_name"
+            android:id="@+id/id_item_address_select_default_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_toRightOf="@+id/id_item_address_select_iv_indicator"
+            android:layout_marginLeft="8dp"
+            android:text="默认"
+            android:textSize="10sp"
+            android:background="@drawable/select_btn_edge_color_touming"
+            android:textColor="@color/app_green"/>
+        <TextView
+            android:layout_toRightOf="@+id/id_item_address_select_default_tv"
+            android:layout_below="@+id/id_item_address_select_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_marginRight="30dp"
+            android:text="北京市朝阳区光华路世贸天街9号时尚大厦6层"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textColor="@color/content_two"/>
+
+        <ImageView
+            android:src="@drawable/edit_address"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </RelativeLayout>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="12dp"
+        android:layout_above="@+id/id_shop_checkout"
+        android:background="@color/divider_line"/>
+
+
+</LinearLayout>

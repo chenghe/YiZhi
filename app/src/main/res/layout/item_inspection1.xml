@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/px_100"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/iv_treatment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/px_30"
+        android:src="@drawable/rightarrow" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/px_21"
+        android:paddingTop="@dimen/px_20"
+        android:paddingBottom="@dimen/px_20" >
+
+        <TextView
+            android:id="@+id/tv_inspection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/little_black"
+            android:textSize="@dimen/px_24"
+            android:text="@string/inspection"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/tv_flag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="医保"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/content_two"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_0.5"
+        android:background="@color/gray_c4"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>

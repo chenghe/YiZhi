@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    android:orientation="vertical"
+    android:scrollbars="none">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/collection"
+            android:layout_width="@dimen/px_80"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/px_20"
+            android:paddingBottom="@dimen/px_20"
+            android:src="@drawable/uncollect"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/collection"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/px_20"
+            android:layout_marginLeft="@dimen/px_40"
+            android:layout_marginBottom="@dimen/px_20">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/px_10"
+                android:textSize="@dimen/px_24"
+                android:textColor="@color/main_color"
+                android:text="咯血"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_prescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/green_tab_bg"
+                    android:textSize="@dimen/px_16"
+                    android:text="处方药"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:id="@+id/tv_medIsure"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/green_tab_bg"
+                    android:textSize="@dimen/px_16"
+                    android:text="医保药"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="@dimen/px_10"/>
+
+                <TextView
+                    android:id="@+id/tv_direction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/green_tab_bg"
+                    android:textSize="@dimen/px_16"
+                    android:text="中/西药"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="@dimen/px_10"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_0.5"
+        android:layout_marginLeft="@dimen/px_40"
+        android:background="@color/gray_c4"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px_40"
+        android:layout_marginRight="@dimen/px_40"
+        android:layout_marginTop="@dimen/px_20"
+        android:layout_marginBottom="@dimen/px_20"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/chemicalName"
+            android:textColor="@color/main_color"
+            android:singleLine="true"/>
+
+        <TextView
+            android:id="@+id/tvChemicalName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_10"
+            android:text="@string/testCon1"
+            android:textColor="@color/little_black"
+            android:singleLine="false"
+            android:lineSpacingExtra="@dimen/px_5"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_0.5"
+        android:layout_marginLeft="@dimen/px_40"
+        android:background="@color/gray_c4"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px_40"
+        android:layout_marginRight="@dimen/px_40"
+        android:layout_marginTop="@dimen/px_20"
+        android:layout_marginBottom="@dimen/px_20"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/supplierInfo"
+            android:textColor="@color/main_color"
+            android:singleLine="true"/>
+
+        <TextView
+            android:id="@+id/tvSupplierInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_10"
+            android:text="@string/testCon1"
+            android:textColor="@color/little_black"
+            android:singleLine="false"
+            android:lineSpacingExtra="@dimen/px_5"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_0.5"
+        android:layout_marginLeft="@dimen/px_40"
+        android:background="@color/gray_c4"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px_40"
+        android:layout_marginRight="@dimen/px_40"
+        android:layout_marginTop="@dimen/px_20"
+        android:layout_marginBottom="@dimen/px_20"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/adaptionDiease"
+            android:textColor="@color/main_color"
+            android:singleLine="true"/>
+
+        <TextView
+            android:id="@+id/tvAdaptionDiease"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_10"
+            android:text="@string/testCon1"
+            android:textColor="@color/little_black"
+            android:singleLine="false"
+            android:lineSpacingExtra="@dimen/px_5"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_0.5"
+        android:layout_marginLeft="@dimen/px_40"
+        android:background="@color/gray_c4"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px_40"
+        android:layout_marginRight="@dimen/px_40"
+        android:layout_marginTop="@dimen/px_20"
+        android:layout_marginBottom="@dimen/px_20"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/usage"
+            android:textColor="@color/main_color"
+            android:singleLine="true"/>
+
+        <TextView
+            android:id="@+id/tvUsage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_10"
+            android:text="@string/testCon1"
+            android:singleLine="false"
+            android:lineSpacingExtra="@dimen/px_5"/>
+    </LinearLayout>
+
+    <!--<View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_0.5"
+        android:layout_marginLeft="@dimen/px_40"
+        android:background="@color/gray_c4"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px_40"
+        android:layout_marginRight="@dimen/px_40"
+        android:layout_marginTop="@dimen/px_20"
+        android:layout_marginBottom="@dimen/px_20"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/taboo"
+            android:textColor="@color/main_color"
+            android:singleLine="true"/>
+
+        <TextView
+            android:id="@+id/tvTaboo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_10"
+            android:text="@string/testCon1"
+            android:singleLine="false"
+            android:lineSpacingExtra="@dimen/px_5"/>
+    </LinearLayout>-->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_0.5"
+        android:layout_marginLeft="@dimen/px_40"
+        android:background="@color/gray_c4"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="@dimen/px_80"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/px_20"
+        android:paddingBottom="@dimen/px_20"
+        android:src="@drawable/rightarrow"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true" />
+
+    <LinearLayout
+        android:id="@+id/ll_otherSameTypeDrug"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px_40"
+        android:layout_marginRight="@dimen/px_40"
+        android:layout_marginTop="@dimen/px_20"
+        android:layout_marginBottom="@dimen/px_20"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/otherSameTypeDrug"
+            android:textColor="@color/main_color"
+            android:singleLine="true"/>
+
+        <TextView
+            android:id="@+id/tv_otherSameTypeDrug"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_10"
+            android:text="@string/testCon1"
+            android:singleLine="false"
+            android:lineSpacingExtra="@dimen/px_5"/>
+    </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>
+
+</ScrollView>

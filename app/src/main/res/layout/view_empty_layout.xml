@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/id_view_empty_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/lnyt_load_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/id_view_empty_iv_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_empty_cart"/>
+
+        <TextView
+            android:id="@+id/id_view_empty_tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/content_two"
+            android:gravity="center"
+            android:lineSpacingExtra="3dp"
+            android:textSize="14sp"
+            android:text=" ~"/>
+
+        <Button
+            android:id="@+id/id_view_empty_btn_action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text=" "
+            android:visibility="gone"
+            android:textColor="@color/app_green"
+            android:background="@drawable/select_btn_edge_color"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/id_empty_view_pregress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/iv_loading_custom"
+            android:src="@drawable/load_ing"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/text_one"
+            android:text="正在拼命加载···"/>
+    </LinearLayout>
+
+</FrameLayout>

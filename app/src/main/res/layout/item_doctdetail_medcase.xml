@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="@dimen/px_20"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_recom_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="false"
+        android:textColor="@color/little_black"
+        android:text="@string/testCon" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px_15">
+
+        <TextView
+            android:id="@+id/tv_people"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/people"
+            android:drawablePadding="@dimen/px_8"
+            android:text="张小花"
+            android:textColor="@color/little_black"/>
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_30"
+            android:layout_toRightOf="@id/tv_people"
+            android:drawableLeft="@drawable/time"
+            android:drawablePadding="@dimen/px_8"
+            android:text="23小时前"
+            android:textColor="@color/little_black"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="75dp"
+    android:background="@drawable/selector_enter">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="25dp"
+        android:textSize="18sp"
+        android:text="CEA+AFP"
+        android:textColor="@color/text_one"/>
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_name"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="5dp"
+        android:textSize="12sp"
+        android:text="2015年2月7日检查"
+        android:textColor="@color/content_two"/>
+
+    <TextView
+        android:id="@+id/take_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="15dp"
+        android:layout_toLeftOf="@+id/tv_time_line"
+        android:textSize="12sp"
+        android:text="用药"
+        android:textColor="@color/content_two"/>
+
+    <TextView
+        android:id="@+id/tv_time_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:textSize="12sp"
+        android:text="120天"
+        android:textColor="@color/content_two"/>
+
+    <Button
+        android:id="@+id/bt_stop"
+        android:layout_width="60dp"
+        android:layout_height="25dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/button_green"
+        android:textSize="11sp"
+        android:textColor="@color/white"
+        android:text="停止用药"/>
+    <View
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:background="@color/divider_line"/>
+</RelativeLayout>

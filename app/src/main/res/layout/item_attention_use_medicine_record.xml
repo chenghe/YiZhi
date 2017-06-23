@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/selector_enter"
+    android:layout_marginTop="10dp">
+
+    <include layout="@layout/layout_divider"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_below="@+id/tv_name"
+            android:layout_marginLeft="12dp"
+            android:textSize="12sp"
+            android:drawablePadding="8dp"
+            android:drawableLeft="@drawable/attention_time"
+            android:text="2015年2月7日检查"
+            android:textColor="@color/content_two"/>
+
+        <TextView
+            android:id="@+id/tv_medicine_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="16dp"
+            android:text="治疗服用中"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/app_green"
+            android:textSize="14sp"/>
+
+    </RelativeLayout>
+
+    <include layout="@layout/layout_divider_padding"/>
+
+    <com.zhongmeban.view.MyListView
+        android:id="@+id/lv_medicine_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:divider="@null"
+        android:descendantFocusability="blocksDescendants"></com.zhongmeban.view.MyListView>
+
+    <LinearLayout
+        android:id="@+id/ll_stop_layout"
+        android:orientation="vertical"
+        android:background="@drawable/selector_enter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/layout_divider"/>
+
+        <TextView
+            android:text="停止用药"
+            android:id="@+id/tv_stop_medicine"
+            android:padding="8dp"
+            android:textColor="@color/app_green"
+            android:gravity="center"
+            android:textSize="@dimen/textsize_common"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</LinearLayout>

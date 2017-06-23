@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fl_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:background="@color/title_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"/>
+    <include
+        layout="@layout/include_empty_view"
+        android:visibility="gone"/>
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/menu_green"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:paddingBottom="15dp"
+        android:paddingRight="15dp"
+        fab:menu_animationDelayPerItem="0"
+        fab:menu_backgroundColor="#ccffffff"
+        fab:menu_colorNormal="@color/app_green"
+        fab:menu_colorPressed="@color/main_color"
+        fab:menu_colorRipple="@color/tab_bg1"
+        fab:menu_labels_maxLines="2"
+        fab:menu_labels_ellipsize="end">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/float_button_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/floating_now"
+            fab:fab_size="mini"
+            fab:fab_colorNormal="@color/white"
+            fab:fab_colorPressed="#CCCCCC"
+            fab:fab_colorRipple="#EEEEEE"
+            fab:fab_label="添加新的化疗记录" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/float_button_exist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/floating_history"
+            fab:fab_size="mini"
+            fab:fab_colorNormal="@color/white"
+            fab:fab_colorPressed="#CCCCCC"
+            fab:fab_colorRipple="#EEEEEE"
+            fab:fab_label="添加历史化疗记录" />
+    </com.github.clans.fab.FloatingActionMenu>
+</RelativeLayout>

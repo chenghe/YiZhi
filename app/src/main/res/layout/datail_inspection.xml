@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    android:orientation="vertical"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/title_bar_layout" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/collection"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/px_20"
+            android:layout_marginRight="@dimen/px_20"
+            android:layout_marginLeft="@dimen/px_40"
+            android:layout_marginBottom="@dimen/px_20">
+
+            <TextView
+                android:id="@+id/tvInspectionName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/px_10"
+                android:textSize="@dimen/px_30"
+                android:textColor="@color/main_color"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/tvInspectionType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/green_tab_bg"
+                android:textSize="@dimen/px_18"
+                android:text=""
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_0.5"
+            android:background="@color/gray_c4" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_40"
+            android:layout_marginRight="@dimen/px_40"
+            android:layout_marginTop="@dimen/px_20"
+            android:layout_marginBottom="@dimen/px_20"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/costEstimates"
+                android:textColor="@color/main_color"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/tvCostEstimates"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_10"
+                android:text=""
+                android:textColor="@color/little_black"
+                android:singleLine="false"
+                android:lineSpacingExtra="@dimen/px_5" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_0.5"
+            android:background="@color/gray_c4" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_40"
+            android:layout_marginRight="@dimen/px_40"
+            android:layout_marginTop="@dimen/px_20"
+            android:layout_marginBottom="@dimen/px_20"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/checkIntro"
+                android:textColor="@color/main_color"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/tvCheckIntro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_10"
+                android:text=""
+                android:singleLine="false"
+                android:textColor="@color/little_black"
+                android:lineSpacingExtra="@dimen/px_5" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_0.5"
+            android:background="@color/gray_c4" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_40"
+            android:layout_marginRight="@dimen/px_40"
+            android:layout_marginTop="@dimen/px_20"
+            android:layout_marginBottom="@dimen/px_20"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/miseryIndex"
+                android:textColor="@color/main_color"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/tvMiseryIndex"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_10"
+                android:text=""
+                android:textColor="@color/little_black"
+                android:drawableRight="@drawable/little"
+                android:drawablePadding="@dimen/px_10"
+                android:gravity="center_vertical"
+                android:singleLine="false"
+                android:lineSpacingExtra="@dimen/px_5" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_0.5"
+            android:background="@color/gray_c4" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_40"
+            android:layout_marginRight="@dimen/px_40"
+            android:layout_marginTop="@dimen/px_20"
+            android:layout_marginBottom="@dimen/px_20"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/checkCycle"
+                android:textColor="@color/main_color"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/tvCycle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_10"
+                android:text=""
+                android:singleLine="false"
+                android:textColor="@color/little_black"
+                android:lineSpacingExtra="@dimen/px_5" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

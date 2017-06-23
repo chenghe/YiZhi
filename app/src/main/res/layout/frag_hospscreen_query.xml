@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/title_bar_layout"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_treat_city"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_80">
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_20"
+            android:layout_centerVertical="true"
+            android:src="@drawable/num1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/treat_city"
+            android:textColor="@color/little_black"
+            android:layout_toRightOf="@id/image1"
+            android:layout_marginLeft="@dimen/px_30"
+            android:layout_centerVertical="true"
+            android:paddingBottom="@dimen/px_5"
+            android:textSize="@dimen/px_24"/>
+
+        <ImageView
+            android:id="@+id/right1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/rightarrow"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/px_20"/>
+
+        <TextView
+            android:id="@+id/tv_treat_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:hint="@string/please_choose_treat_city"
+            android:layout_toLeftOf="@id/right1"
+            android:layout_marginRight="@dimen/px_15"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_1"
+            android:background="@color/gray_c4"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <!--<RelativeLayout
+        android:id="@+id/rl_treat_area"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_80">
+        <ImageView
+            android:id="@+id/image2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_20"
+            android:layout_centerVertical="true"
+            android:src="@drawable/num2"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/treat_area"
+            android:textColor="@color/little_black"
+            android:layout_toRightOf="@id/image2"
+            android:layout_marginLeft="@dimen/px_30"
+            android:layout_centerVertical="true"
+            android:paddingBottom="@dimen/px_5"
+            android:textSize="@dimen/px_24"/>
+
+        <ImageView
+            android:id="@+id/right2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/rightarrow"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/px_20"/>
+
+        <TextView
+            android:id="@+id/tv_treat_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:hint="@string/please_choose_treat_area"
+            android:layout_toLeftOf="@id/right2"
+            android:layout_marginRight="@dimen/px_15"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_1"
+            android:background="@color/gray_c4"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>-->
+    <RelativeLayout
+        android:id="@+id/rl_hospital_level"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_80">
+        <ImageView
+            android:id="@+id/image3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_20"
+            android:layout_centerVertical="true"
+            android:src="@drawable/num2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hospital_level"
+            android:textColor="@color/little_black"
+            android:layout_toRightOf="@id/image3"
+            android:layout_marginLeft="@dimen/px_30"
+            android:layout_centerVertical="true"
+            android:paddingBottom="@dimen/px_5"
+            android:textSize="@dimen/px_24"/>
+
+        <ImageView
+            android:id="@+id/right3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/rightarrow"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/px_20"/>
+
+        <TextView
+            android:id="@+id/tv_hospital_level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:hint="@string/please_choose_hospital_level"
+            android:layout_toLeftOf="@id/right3"
+            android:layout_marginRight="@dimen/px_15"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_1"
+            android:background="@color/gray_c4"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+</LinearLayout>

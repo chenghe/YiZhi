@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="0dp"
+    app:elevation="0dp"
+    android:background="@color/toolbar_color"
+    android:theme="@style/AppBarOverlay">
+
+    <android.support.v7.widget.Toolbar
+
+        android:id="@+id/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        app:layout_scrollFlags="scroll|enterAlways"
+        android:elevation="0dp"
+        android:background="@color/toolbar_color"
+        app:popupTheme="@style/PopupOverlay">
+
+        <TextView
+            android:id="@+id/id_toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/top_text"
+            android:text="@string/app_name"
+            android:textSize="18sp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center"/>
+
+        <RelativeLayout
+            android:layout_gravity="right"
+            android:layout_width="108dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/id_toolbar_action"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/app_green"
+                android:layout_marginRight="16dp"
+                android:text=" ddd "
+                android:visibility="gone"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textSize="16sp"/>
+
+            <ImageView
+                android:id="@+id/iv_toolbar_action"
+                android:layout_width="@dimen/title_height"
+                android:layout_height="@dimen/title_height"
+                android:scaleType="centerInside"
+                android:src="@drawable/home_search"
+                android:gravity="center_horizontal"
+                android:visibility="gone"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:textSize="16sp"/>
+
+            <ImageView
+                android:layout_toLeftOf="@+id/iv_toolbar_action"
+                android:id="@+id/iv_toolbar_second_action"
+                android:layout_width="@dimen/title_height"
+                android:layout_height="@dimen/title_height"
+                android:layout_marginRight="4dp"
+                android:visibility="gone"
+                android:scaleType="centerInside"
+                android:src="@drawable/medicine_brand"
+                android:textSize="16sp"/>
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/divider_line" />
+
+</android.support.design.widget.AppBarLayout>

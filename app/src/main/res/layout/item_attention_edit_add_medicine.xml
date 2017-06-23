@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="8dp"
+    android:paddingTop="8dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <TextView
+        android:id="@+id/tv_edit_add_medicine_showname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="AFP偏高"
+        android:textColor="@color/text_one"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/tv_edit_add_medicine_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_edit_add_medicine_showname"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@+id/tv_num"
+        android:text="800U/L"
+        android:textColor="@color/content_two"/>
+
+    <ImageView
+        android:id="@+id/iv_edit_add_medicine_delete"
+        android:layout_width="42dp"
+        android:layout_height="match_parent"
+        android:scaleType="centerInside"
+        android:layout_marginRight="8dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/delete"/>
+
+</RelativeLayout>

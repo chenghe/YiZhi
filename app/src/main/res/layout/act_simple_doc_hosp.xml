@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 医院 医生列表共用布局-->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- 这是标题 -->
+    <include
+        android:id="@+id/layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        layout="@layout/main_title"
+        android:focusable="true" />
+
+    <!-- 这是搜索栏 -->
+    <include
+        android:id="@+id/layout_searchbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/layout_top"
+        layout="@layout/layout_edit_sreachbar"/>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/refreshlayout"
+        android:layout_below="@+id/layout_searchbar"
+        android:layout_above="@+id/rl_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <include
+        android:layout_below="@+id/layout_searchbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/view_no_search_result" />
+
+    <RelativeLayout
+        android:id="@+id/rl_select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/title_bg"
+        android:layout_gravity="center_vertical"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/tv_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="筛选条件:"
+            android:layout_centerVertical="true"
+            android:textColor="@color/tab_top_text_1"/>
+        <TextView
+            android:id="@+id/tv_select_content"
+            android:layout_toRightOf="@+id/tv_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="10dp"
+            android:text="哈哈哈哈哈哈哈"
+            android:textColor="@color/tab_top_text_1"/>
+        <ImageView
+            android:id="@+id/iv_select_cancel"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/clear"/>
+    </RelativeLayout>
+</RelativeLayout>

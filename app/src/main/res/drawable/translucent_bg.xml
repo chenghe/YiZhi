@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <corners android:radius="0dp"/> <!-- 边框半径  -->
+    <solid style="Theme.Translucent" />
+    <stroke android:color="@color/blue"
+        android:width="1dp" />  <!--边框线条的粗细 -->
+
+</shape>

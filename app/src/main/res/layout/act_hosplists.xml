@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 医院 医生列表共用布局-->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- 这是标题 -->
+    <include
+        layout="@layout/toolbar_view" />
+
+    <!--&lt;!&ndash; 这是搜索栏 &ndash;&gt;-->
+    <!--<include-->
+        <!--android:id="@+id/layout_searchbar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:layout_below="@+id/layout_top"-->
+        <!--layout="@layout/layout_edit_sreachbar"/>-->
+    <com.zhongmeban.view.PopDropDownMenu
+        android:id="@+id/dropdownmenu"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/id_toolbar_view"
+        android:layout_height="wrap_content"/>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/refreshlayout"
+        android:layout_below="@+id/dropdownmenu"
+        android:layout_above="@+id/rl_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/dropdownmenu"
+        layout="@layout/include_empty_view"/>
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <!-- 这是标题 -->
+    <include
+        android:id="@+id/layout_top"
+        layout="@layout/main_title"
+        android:focusable="true" />
+
+    <!--<TextView-->
+        <!--android:id="@+id/tv_add_title"-->
+        <!--android:layout_below="@+id/layout_top"-->
+        <!--android:layout_marginTop="30dp"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="添加患者信息"-->
+        <!--android:textSize="24sp"-->
+        <!--android:textColor="@color/main_color"/>-->
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/ll_add_icon"-->
+        <!--android:layout_below="@+id/tv_add_title"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:orientation="vertical"-->
+        <!--android:gravity="center_horizontal"-->
+        <!--android:layout_height="wrap_content">-->
+        <!--<ImageView-->
+            <!--android:id="@+id/iv_icon"-->
+            <!--android:layout_marginTop="40dp"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@drawable/add_icon" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_addticon"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textColor="@color/content_two"-->
+            <!--android:textSize="18sp"-->
+            <!--android:text="上传头像"/>-->
+        <!--</LinearLayout>-->
+
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/layout_top">
+        </FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/selector_enter"
+    android:paddingBottom="@dimen/padding_content"
+    android:layout_marginTop="@dimen/margin_top_item">
+
+    <include layout="@layout/layout_divider"/>
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_content"
+        android:layout_below="@+id/tv_name"
+        android:layout_marginLeft="@dimen/layout_outside"
+        android:textSize="@dimen/textsize_small"
+        android:drawablePadding="@dimen/padding_content"
+        android:drawableLeft="@drawable/attention_time"
+        android:text="2015年2月7日检查"
+        android:textColor="@color/content_two"/>
+
+    <include layout="@layout/layout_divider_padding"/>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_outside"
+        android:layout_marginLeft="@dimen/layout_inside"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textSize="@dimen/textsize_common"
+        android:text="CEA+AFP"
+        android:textColor="@color/text_one"/>
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_outside"
+            android:layout_marginLeft="@dimen/layout_inside"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textSize="@dimen/textsize_hint"
+            android:text="主治医师："
+            android:textColor="@color/content_two"/>
+
+        <TextView
+            android:id="@+id/tv_content1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_outside"
+            android:layout_marginLeft="@dimen/padding_content"
+            android:ellipsize="end"
+            android:textSize="@dimen/textsize_hint"
+            android:text="CEA+AFP"
+            android:textColor="@color/content_two"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_outside"
+            android:layout_marginLeft="@dimen/layout_inside"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textSize="@dimen/textsize_hint"
+            android:text="主治医师："
+            android:textColor="@color/content_two"/>
+
+        <TextView
+            android:id="@+id/tv_content2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_outside"
+            android:layout_marginLeft="@dimen/padding_content"
+            android:ellipsize="end"
+            android:textSize="@dimen/textsize_hint"
+            android:text="CEA+AFP"
+            android:textColor="@color/content_two"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_title3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_outside"
+            android:layout_marginLeft="@dimen/layout_inside"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textSize="@dimen/textsize_hint"
+            android:text="主治医师："
+            android:textColor="@color/content_two"/>
+
+        <TextView
+            android:id="@+id/tv_content3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_outside"
+            android:layout_marginLeft="@dimen/padding_content"
+            android:ellipsize="end"
+            android:textSize="@dimen/textsize_hint"
+            android:text="CEA+AFP"
+            android:textColor="@color/content_two"/>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- 这是标题 -->
+    <include
+        layout="@layout/toolbar_view"/>
+
+    <!-- 这是搜索栏 -->
+    <include
+        android:id="@+id/layout_searchbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        layout="@layout/layout_edit_sreachbar"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/id_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ListView
+                android:id="@+id/listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none"
+                android:background="@color/white"/>
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <include layout="@layout/include_empty_view"/>
+
+    </FrameLayout>
+
+
+</LinearLayout>

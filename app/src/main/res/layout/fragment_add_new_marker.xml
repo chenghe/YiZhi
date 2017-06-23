@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?><!--添加新标志物-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- 这是标题 -->
+    <include
+        android:id="@+id/layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        layout="@layout/main_title"
+        android:focusable="true"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/title_bg"
+        android:layout_below="@+id/layout_top">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <include layout="@layout/layout_space"/>
+
+                <include layout="@layout/layout_divider"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="检查目的"
+                    android:paddingLeft="16dp"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:textColor="@color/content_two"
+                    android:textSize="14sp"/>
+
+                <include layout="@layout/layout_divider_padding"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/tv_diagnosis"
+                        android:layout_width="60dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="确诊"
+                        android:gravity="center"
+                        android:textSize="14sp"
+                        android:textColor="@color/content_two"
+                        android:background="@drawable/bg_box"/>
+
+                    <TextView
+                        android:id="@+id/tv_reexamination"
+                        android:layout_width="60dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:text="复查"
+                        android:gravity="center"
+                        android:textSize="14sp"
+                        android:textColor="@color/content_two"
+                        android:background="@drawable/bg_box"/>
+
+                    <TextView
+                        android:id="@+id/tv_evaluation"
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:text="疗效评估"
+                        android:gravity="center"
+                        android:textSize="14sp"
+                        android:textColor="@color/content_two"
+                        android:background="@drawable/bg_box"/>
+
+                    <TextView
+                        android:id="@+id/tv_body_check"
+                        android:layout_width="110dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:text="不良反应监测"
+                        android:gravity="center"
+                        android:textSize="14sp"
+                        android:textColor="@color/content_two"
+                        android:background="@drawable/bg_box"/>
+                </LinearLayout>
+
+                <include layout="@layout/layout_divider"/>
+
+                <include layout="@layout/layout_space"/>
+
+                <RelativeLayout
+                    android:id="@+id/rl_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_common"
+                    android:background="@drawable/selector_enter">
+
+                    <TextView
+                        android:id="@+id/tv_date_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_centerVertical="true"
+                        android:text="检查日期"
+                        android:textColor="@color/text_one"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:id="@+id/tv_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="40dp"
+                        android:text="请选择开始日期"
+                        android:textSize="14sp"
+                        android:textColor="@color/content_two"/>
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/arrow_right"/>
+                </RelativeLayout>
+
+                <include layout="@layout/layout_divider_padding"/>
+
+                <RelativeLayout
+                    android:id="@+id/rl_hospital"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_common"
+                    android:background="@drawable/selector_enter">
+
+                    <TextView
+                        android:id="@+id/tv_hospital_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_centerVertical="true"
+                        android:text="检查医院"
+                        android:textColor="@color/text_one"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:id="@+id/tv_hospital"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="40dp"
+                        android:layout_marginLeft="100dp"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:hint="请选择检查医院"
+                        android:gravity="center_vertical|right"
+                        android:textSize="14sp"
+                        android:textColor="@color/content_two"/>
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/arrow_right"/>
+                </RelativeLayout>
+
+                <include layout="@layout/layout_space"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/white">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentTop="true"
+                        android:background="@color/divider_line"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="16dp"
+                        android:text="标志物"
+                        android:textColor="@color/content_two"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:id="@+id/tv_addmarker"
+                        android:layout_width="60dp"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:text="添加"
+                        android:textColor="@color/app_green"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:textSize="14sp"
+                        android:layout_marginRight="20dp"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/divider_line"/>
+                </RelativeLayout>
+
+                <com.zhongmeban.view.MyListView
+                    android:id="@+id/plan_marker"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="50dp"
+                    android:orientation="vertical"/>
+
+                <include layout="@layout/layout_divider"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bt_save"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="40dp"
+                android:text="保存"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:background="@drawable/button_green"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

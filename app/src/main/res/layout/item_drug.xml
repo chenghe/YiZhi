@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/px_120">
+
+    <ImageView
+        android:id="@+id/image_collect"
+        android:layout_width="@dimen/px_80"
+        android:layout_height="match_parent"
+        android:src="@drawable/uncollect"
+        android:scaleType="center"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/px_20"
+        android:paddingBottom="@dimen/px_10"
+        android:layout_toLeftOf="@id/image_collect"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_drug_name"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:text="注射用盐酸益达必行"
+            android:textColor="@color/little_black"
+            android:layout_marginTop="@dimen/px_15"
+            android:textSize="@dimen/px_24"/>
+
+        <TextView
+            android:id="@+id/tv_drug_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="鳝丝大"
+            android:textColor="@color/content_two"
+            android:layout_marginTop="@dimen/px_5"
+            android:textSize="@dimen/px_18"/>
+
+        <TextView
+            android:id="@+id/tv_drug_price"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="2000-3000元"
+            android:textColor="@color/main_color"
+            android:layout_marginTop="@dimen/px_10"
+            android:textSize="@dimen/px_18"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_0.5"
+        android:background="@color/gray_c4"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

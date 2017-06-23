@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/loading_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.zhongmeban.view.CommonEditView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:right_text="buxing "
+        app:left_text="zuobian"
+        >
+
+    </com.zhongmeban.view.CommonEditView>
+
+    <TextView
+        android:visibility="gone"
+        android:layout_margin="16dp"
+        android:textSize="14dp"
+        android:lineSpacingExtra="8dp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text = "揽件方式：上门取件\n快递公司：顺丰快递\n预约时间：9月6日 立即取件\n快递费用：等待称重确定价格"
+        android:id="@+id/tv_test"/>
+
+    <android.support.v7.widget.RecyclerView
+
+        android:id="@+id/test_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>

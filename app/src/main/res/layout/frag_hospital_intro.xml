@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/px_20"
+        android:orientation="vertical">
+
+        <include layout="@layout/item_hospital" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/introduce"
+            android:textColor="@color/main_color"
+            android:textSize="@dimen/px_18"
+            android:layout_marginTop="@dimen/px_15" />
+
+        <TextView
+            android:id="@+id/tv_introduce"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="false"
+            android:layout_marginTop="@dimen/px_15"
+            android:lineSpacingExtra="@dimen/px_8"
+            android:text="暂无数据"
+            android:textColor="@color/little_black"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_0.5"
+            android:layout_marginTop="@dimen/px_20"
+            android:background="@color/gray_c4" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="今日床位"
+            android:textColor="@color/main_color"
+            android:textSize="@dimen/px_18"
+            android:layout_marginTop="@dimen/px_15" />
+
+        <TextView
+            android:id="@+id/tv_beds_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_10"
+            android:text="0个"
+            android:textColor="@color/little_black"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_0.5"
+            android:layout_marginTop="@dimen/px_15"
+            android:background="@color/gray_c4" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="联系方式"
+            android:textColor="@color/main_color"
+            android:textSize="@dimen/px_18"
+            android:layout_marginTop="@dimen/px_15" />
+
+        <TextView
+            android:id="@+id/tv_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/px_22"
+            android:singleLine="false"
+            android:layout_marginTop="@dimen/px_10" />
+
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/image_location"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:layout_marginTop="@dimen/px_20"
+            android:src="@drawable/image_hospital" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true">
+
+    <LinearLayout
+        android:id="@+id/ll_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/title_bar_layout" />
+
+        <include layout="@layout/search_bar_layout" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_choices"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_60"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:background="@color/calendar_bg">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_60"
+            android:layout_alignParentBottom="true">
+
+            <ImageView
+                android:id="@+id/image_clear"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/px_20"
+                android:paddingRight="@dimen/px_20"
+                android:src="@drawable/clear"
+                android:scaleType="center"
+                android:layout_alignParentRight="true" />
+
+            <TextView
+                android:id="@+id/tv_choices"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@id/image_clear"
+                android:text="筛选条件:  测试我只是一句测试我只是一句测试"
+                android:maxLines="2"
+                android:paddingLeft="@dimen/px_26"
+                android:paddingRight="@dimen/px_26"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/px_18"
+                android:textColor="@color/content_two" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <com.zhongmeban.view.XListView
+        android:id="@+id/content_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:divider="@color/calendar_bg"
+        android:background="@color/calendar_bg"
+        android:layout_above="@id/rl_choices"
+        android:layout_below="@id/ll_head"
+        android:layout_gravity="center" />
+
+</RelativeLayout>
+

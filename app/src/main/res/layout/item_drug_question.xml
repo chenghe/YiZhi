@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="@dimen/px_20"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvAnswer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="false"
+        android:textSize="@dimen/px_18"
+        android:text="@string/unAnswer"
+        android:textColor="@color/green_text"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/px_10"
+        android:layout_marginTop="@dimen/px_15"
+        android:background="@color/calendar_bg">
+
+        <TextView
+            android:id="@+id/tvQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:singleLine="false"
+            android:textColor="@color/little_black"
+            android:text="我是问题"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvRecentTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/time"
+        android:layout_marginTop="@dimen/px_15"
+        android:drawablePadding="@dimen/px_10"
+        android:text="2001年"
+        android:textColor="@color/little_black"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_0.5"
+        android:background="@color/gray_c4"
+        android:layout_marginTop="@dimen/px_15"/>
+
+</LinearLayout>

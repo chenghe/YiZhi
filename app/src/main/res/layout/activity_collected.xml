@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- 这是标题 -->
+    <include
+        android:id="@+id/layout_top"
+        layout="@layout/main_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="true" />
+
+    <com.zhongmeban.utils.SlidingTabLayout
+        android:id="@+id/tl"
+        tl:tl_tab_padding="22dp"
+        tl:tl_tab_space_equal="true"
+        tl:tl_textSelectColor="#58c4a5"
+        tl:tl_indicator_width_equal_title="true"
+        tl:tl_indicator_color="#58c4a5"
+        tl:tl_textUnselectColor="#66000000"
+        tl:tl_textAllCaps="true"
+        tl:tl_textBold="true"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/title_bg" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

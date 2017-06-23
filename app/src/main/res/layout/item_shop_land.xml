@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="150dp"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:layout_marginLeft="3dp"
+    android:layout_marginRight="3dp">
+
+    <ImageView
+        android:id="@+id/id_item_shop_home_iv_land"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_margin="8dp"
+        android:scaleType="fitXY"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/test"/>
+
+    <TextView
+        android:id="@+id/id_item_shop_home_tv_land"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="敬请期待"
+        android:padding="4dp"
+        android:textColor="@color/text_one"
+        android:textSize="14sp"
+        android:maxLines="1"
+        android:ellipsize="end"/>
+
+    <TextView
+        android:id="@+id/id_item_shop_home_tv__price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="$ 150"
+        android:textColor="@color/app_green"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/id_item_shop_home_tv_price_old"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="$ 150"
+        android:textColor="@color/content_two"
+        android:textSize="12sp"/>
+
+</LinearLayout>

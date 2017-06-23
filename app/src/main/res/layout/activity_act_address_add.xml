@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:divider="@drawable/shape_divider"
+    android:showDividers="middle|end"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_view"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/edittext_margin"
+            android:textSize="16sp"
+            android:background="#ffffff"
+            android:text="收货人："
+            android:layout_alignParentLeft="true"/>
+
+        <EditText
+            android:id="@+id/id_act_address_add_edit_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:textSize="16sp"
+            android:padding="@dimen/edittext_margin"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/edittext_margin"
+            android:textSize="16sp"
+            android:background="#ffffff"
+            android:text="手机号："
+            android:layout_alignParentLeft="true"/>
+
+        <EditText
+            android:id="@+id/id_act_address_add_edit_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="phone"
+            android:background="#ffffff"
+            android:textSize="16sp"
+            android:padding="@dimen/edittext_margin"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/edittext_margin"
+            android:textSize="16sp"
+            android:background="#ffffff"
+            android:text="所在地区："
+            android:layout_alignParentLeft="true"/>
+
+        <RelativeLayout
+            android:id="@+id/id_act_address_add_layout_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/id_act_address_add_tv_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:layout_marginRight="16dp"
+                android:ellipsize="end"
+                android:layout_centerVertical="true"
+                android:maxLines="2"
+                android:textSize="16sp"
+                android:padding="10dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/item_arrow"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/edittext_margin"
+            android:textSize="16sp"
+            android:text="详细地址："
+            android:layout_alignParentLeft="true"/>
+
+        <EditText
+            android:id="@+id/id_act_address_add_tv_address_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:textSize="16sp"
+            android:padding="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/id_act_address_add_layout_default"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.zhongmeban.utils.SmoothCheckBox
+            android:id="@+id/id_act_address_add_cb_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:color_checked="@color/app_green"/>
+
+        <TextView
+            android:id="@+id/id_act_address_add_tv_default"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="设为默认地址"
+            android:textColor="@color/content_two"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

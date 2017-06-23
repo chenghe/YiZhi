@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/id_item_address_list_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:textSize="16sp"
+            android:text="班德尔科技"
+            android:textColor="@color/text_one"/>
+
+        <TextView
+            android:id="@+id/id_item_address_list_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="18618668686"
+            android:textSize="16sp"
+            android:textColor="@color/text_one"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/id_item_address_list_detail_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="北京市朝阳区光华路世贸天街9号时尚大厦6层"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:textColor="@color/content_two"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_above="@+id/id_shop_checkout"
+        android:background="@color/divider_line"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp">
+
+        <LinearLayout
+            android:id="@+id/id_item_address_list_layout_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/id_item_address_list_iv_default"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/choose_address_normal"/>
+
+            <TextView
+                android:id="@+id/id_item_address_list_tv_default"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="设为默认"
+                android:textColor="@color/content_two"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/id_item_address_list_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="删除"
+            android:drawablePadding="8dp"
+            android:drawableLeft="@drawable/deleted_address"
+            android:textColor="@color/content_two"/>
+
+        <TextView
+            android:id="@+id/id_item_address_list_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/id_item_address_list_delete"
+            android:text="编辑"
+            android:layout_marginRight="10dp"
+            android:drawablePadding="8dp"
+            android:drawableLeft="@drawable/edit_address"
+            android:textColor="@color/content_two"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:layout_above="@+id/id_shop_checkout"
+        android:background="@color/divider_line"/>
+</LinearLayout>

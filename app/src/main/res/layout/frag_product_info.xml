@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhongmeban.view.BounceScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginBottom="56dp"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/id_frag_product_viewpager_group"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <com.zhongmeban.view.ViewPagerNest
+                android:id="@+id/id_frag_product_viewpager"
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"></com.zhongmeban.view.ViewPagerNest>
+
+            <TextView
+                android:id="@+id/id_frag_product_tv_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1/5"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_margin="18dp"
+                android:textSize="16sp"
+                android:background="@drawable/shape_circie_grey"
+                android:textColor="@color/white"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/id_frag_product_tv_price_our"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="$ 666"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textColor="@color/app_green"/>
+
+            <TextView
+                android:id="@+id/id_frag_product_tv_price_market"
+                android:layout_marginLeft="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="999"
+                android:gravity="center"
+                android:textColor="@color/alpha_gray"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/divider_line"></View>
+
+        <TextView
+            android:id="@+id/id_frag_product_tv_name"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:textSize="20sp"
+            android:textColor="@color/text_one"
+            android:textStyle="bold"
+            android:text="这是商品标题"/>
+
+        <TextView
+            android:id="@+id/id_frag_product_tv_intrduce"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:lineSpacingExtra="4dp"
+            android:text="这是商品介绍这是商品介绍这是商品介绍这是商品介绍这是商品介绍这是商品介绍这是商品介绍这是商品介绍这是商品介绍这是商品介绍这是商品介绍"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/divider_line"></View>
+
+        <LinearLayout
+            android:padding="8dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <TextView
+                android:text="满100包邮"
+                android:layout_gravity="center_vertical"
+                android:drawableLeft="@drawable/tag_plus"
+                android:textColor="@color/attention_chemotherapy_color"
+                android:drawablePadding="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_marginLeft="22dp"
+                android:text="七天无理由退货"
+                android:drawablePadding="8dp"
+                android:layout_gravity="center_vertical"
+                android:drawableLeft="@drawable/tag_plus"
+                android:textColor="@color/attention_chemotherapy_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <FrameLayout
+            android:background="@color/most_bg"
+            android:paddingTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:padding="8dp"
+                android:background="@color/white"
+                android:id="@+id/id_frag_product_select_shopping"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_alignParentLeft="true"
+                    android:text="已选 3个"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <ImageView
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/arrow_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:padding="8dp"
+            android:background="@color/most_bg"
+            android:text="规格参数"
+            android:layout_height="wrap_content"/>
+
+
+        <com.zhongmeban.view.ScrollLinearLayout
+            android:layout_margin="12dp"
+            android:id="@+id/id_frag_product_list_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+
+    </LinearLayout>
+
+</com.zhongmeban.view.BounceScrollView>

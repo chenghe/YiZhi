@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?><!--癌症 分期解释-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/divider_line" />
+
+    <LinearLayout
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/id_item_tumor_tnm_title"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textColor="@color/button_red_normanl"
+            android:background="@drawable/circie_empty"
+            android:layout_width="42dp"
+            android:layout_height="42dp"/>
+
+        <TextView
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:textColor="@color/little_black"
+            android:id="@+id/id_item_tumor_tnm_title_content"
+            android:text="tnm简介"
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</LinearLayout>

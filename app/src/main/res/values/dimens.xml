@@ -1,0 +1,73 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="edittext_margin">16dp</dimen>
+    <dimen name="headerView_ProgressBar_left_marging">18dp</dimen>
+    <dimen name="headerView_height">40dp</dimen>
+    <dimen name="headerView_time_height">20dp</dimen>
+    <dimen name="tab_img_size">22dp</dimen>
+    <dimen name="tab_text_size">12sp</dimen>
+
+    <!-- 通用布局-->
+    <dimen name="layout_outside">12dp</dimen>
+    <dimen name="layout_inside">16dp</dimen>
+    <dimen name="padding_content">8dp</dimen>
+    <dimen name="margin_top_item">10dp</dimen>
+    <dimen name="height_common">50dp</dimen>
+    <dimen name="height_button">48dp</dimen>
+    <dimen name="margin_button">36dp</dimen>
+    <dimen name="height_detail_content">300dp</dimen>
+    <dimen name="height_attention_subtitle">40dp</dimen>
+    <dimen name="height_select_linearlayout_item">32dp</dimen>
+    <dimen name="textsize_common">16sp</dimen>
+    <dimen name="textsize_hint">14sp</dimen>
+    <dimen name="textsize_small">12sp</dimen>
+    <dimen name="textsize_big">24sp</dimen>
+
+    <dimen name="expend_tag_size">92dp</dimen>
+    <dimen name="text_space">3dp</dimen>
+    <dimen name="button_margin">24dp</dimen>
+
+    <!-- BottomDialog start-->
+    <dimen name="bottom_sheet_width">0dp</dimen>
+    <!-- BottomDialog end-->
+    <!--测试数据 start-->
+    <dimen name="parallax_image_height">180dp</dimen>
+    <dimen name="toolbar_elevation">4dp</dimen>
+    <dimen name="toolbar_margin_start">72dp</dimen>
+    <dimen name="flexible_space_height">72dp</dimen>
+    <dimen name="flexible_space_image_height">180dp</dimen>
+    <dimen name="flexible_space_show_fab_offset">120dp</dimen>
+    <dimen name="title_height">50dp</dimen>
+    <dimen name="tab_height">48dp</dimen>
+    <dimen name="header_bar_height">72dp</dimen>
+    <dimen name="intersection_height">16dp</dimen>
+    <dimen name="sliding_slop">32dp</dimen>
+    <dimen name="sliding_overlay_blur_size">4dp</dimen>
+    <!--测试数据 end-->
+
+    <!--CircularProgressBar start-->
+    <color name="cpb_default_color">#58c4a5</color>
+    <dimen name="cpb_default_stroke_width">4dp</dimen>
+    <integer name="cpb_default_min_sweep_angle">20</integer>
+    <integer name="cpb_default_max_sweep_angle">300</integer>
+    <item name="cpb_default_sweep_speed"
+        format="float"
+        type="string">1
+    </item>
+    <item name="cpb_default_rotation_speed"
+        format="float"
+        type="string">1
+    </item>
+    <!--CircularProgressBar end-->
+
+    <!--SideLetterBar start-->
+    <dimen name="side_letter_bar_letter_size">12sp</dimen>
+    <dimen name="side_letter_bar_width">36dp</dimen>
+    <dimen name="city_text_size">16sp</dimen>
+    <dimen name="text_content_size">14sp</dimen>
+    <!--SideLetterBar end-->
+
+</resources>

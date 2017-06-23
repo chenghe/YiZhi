@@ -1,0 +1,111 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popupLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corners_bg"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/rl_huayandan"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:paddingBottom="4dp" >
+
+            <ImageView
+                android:id="@+id/image_huayandan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:scaleType="center"
+                android:src="@drawable/huayandan" >
+            </ImageView>
+
+            <TextView
+                android:id="@+id/tv_huayandan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/image_huayandan"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="@string/huayandan"
+                android:textColor="@color/little_black"
+                android:textSize="12sp" >
+            </TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_indicatorexplain"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:paddingBottom="4dp" >
+
+            <ImageView
+                android:id="@+id/image_indicatorexplain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:scaleType="center"
+                android:src="@drawable/indicatorexplain" >
+            </ImageView>
+
+            <TextView
+                android:id="@+id/tv_indicatorexplain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/image_indicatorexplain"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="@string/indicatorexplain"
+                android:textColor="@color/little_black"
+                android:textSize="12sp" >
+            </TextView>
+        </RelativeLayout>
+
+
+        <!--  以下是占位布局 -->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            android:paddingBottom="4dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:scaleType="center"
+                android:visibility="invisible"
+                android:src="@drawable/inspection" >
+            </ImageView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:paddingBottom="4dp" >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:scaleType="center"
+                android:visibility="invisible"
+                android:src="@drawable/nounexplaining" >
+            </ImageView>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

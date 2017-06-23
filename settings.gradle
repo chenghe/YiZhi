@@ -1,0 +1,3 @@
+include ':app', ':daogenerator', ':HListViewLibrary', ':jcvideoplayer-lib', ':core',
+        ':commons', ':library_progressbar', ':tagcloudview'
+include ':app', ':library'

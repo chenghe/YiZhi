@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/change"
+        android:title="编辑信息"
+        android:icon="@drawable/menu_icon_edit"
+        android:visible="true"/>
+
+    <!--<item-->
+        <!--android:id="@+id/share"-->
+        <!--android:title="分享病历"-->
+        <!--android:icon="@drawable/menu_icon_share"/>-->
+    <item
+        android:id="@+id/stop"
+        android:title="暂停更新"
+        android:icon="@drawable/menu_icon_pause"/>
+    <item
+        android:id="@+id/remove"
+        android:title="删除"
+        android:icon="@drawable/menu_icon_trash"/>
+</menu>

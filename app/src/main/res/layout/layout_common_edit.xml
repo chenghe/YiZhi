@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_pause_date"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_common"
+    android:background="@drawable/selector_enter">
+
+    <TextView
+        android:id="@+id/tv_edit_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/layout_inside"
+        android:text="暂停日期"
+        android:clickable="true"
+        android:focusableInTouchMode="true"
+        android:textColor="@color/text_one"
+        android:focusable="true"
+        android:textSize="@dimen/textsize_common" />
+
+    <TextView
+        android:id="@+id/tv_edit_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/iv_edit_right"
+        android:layout_marginRight="@dimen/layout_outside"
+        android:layout_centerVertical="true"
+        android:hint="我是hint"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:layout_marginLeft="100dp"
+        android:gravity="right|center_vertical"
+        android:text=""
+        android:textColor="@color/content_two"
+        android:textSize="@dimen/textsize_hint" />
+
+    <ImageView
+        android:id="@+id/iv_edit_right"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/layout_inside"
+        android:src="@drawable/arrow_right" />
+
+    <EditText
+        android:id="@+id/et_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/layout_inside"
+        android:gravity="center_vertical|right"
+        android:hint="请选择暂停日期"
+        android:text=""
+        android:maxEms="16"
+        android:layout_marginLeft="100dp"
+        android:textColor="@color/content_two"
+        android:textSize="@dimen/textsize_hint"
+        android:background="@null"
+        android:clickable="false"
+        android:maxLines="1" />
+
+</RelativeLayout>

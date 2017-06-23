@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/selector_enter"
+    android:paddingBottom="@dimen/padding_content"
+    android:layout_marginTop="@dimen/margin_top_item">
+
+    <include layout="@layout/layout_divider"/>
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_content"
+        android:layout_below="@+id/tv_name"
+        android:layout_marginLeft="@dimen/layout_outside"
+        android:textSize="@dimen/textsize_small"
+        android:drawablePadding="@dimen/padding_content"
+        android:drawableLeft="@drawable/attention_time"
+        android:text="2015年2月7日检查"
+        android:textColor="@color/content_two"/>
+
+    <include layout="@layout/layout_divider_padding"/>
+
+    <TextView
+        android:id="@+id/tv_chemotherapy_record_target"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_outside"
+        android:layout_marginLeft="@dimen/layout_inside"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textSize="@dimen/textsize_common"
+        android:text="CEA+AFP"
+        android:textColor="@color/text_one"/>
+
+    <TextView
+        android:id="@+id/tv_chemotherapy_record_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="6dp"
+        android:layout_marginTop="@dimen/padding_content"
+        android:layout_marginLeft="@dimen/layout_inside"
+        android:textSize="@dimen/textsize_hint"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_inside"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textSize="@dimen/textsize_hint"
+            android:text="化疗用药："
+            android:textColor="@color/content_two"/>
+
+        <TextView
+            android:id="@+id/tv_chemotherapy_record_medicine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lineSpacingExtra="4dp"
+            android:layout_marginRight="@dimen/layout_inside"
+            android:textSize="@dimen/textsize_hint"
+            android:text="CEA+AFP"
+            android:textColor="@color/content_two"/>
+
+    </LinearLayout>
+
+</LinearLayout>

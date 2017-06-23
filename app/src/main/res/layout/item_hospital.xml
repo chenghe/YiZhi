@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:gravity="center_vertical"
+    android:background="@drawable/selector_enter">
+
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/rl_image"-->
+    <!--style="@style/image_bg"-->
+    <!--android:layout_width="@dimen/px_130"-->
+    <!--android:layout_height="@dimen/px_100"-->
+    <!--android:layout_marginLeft="@dimen/px_26"-->
+    <!--android:layout_marginRight="@dimen/px_20"-->
+    <!--android:layout_marginTop="@dimen/px_20"-->
+    <!--android:layout_marginBottom="@dimen/px_20">-->
+
+    <FrameLayout
+        android:id="@+id/rl_image"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="@dimen/px_20"
+        android:layout_marginTop="@dimen/px_20"
+        android:layout_marginBottom="@dimen/px_20">
+
+        <ImageView
+            android:id="@+id/image_hosp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/image_hospital" />
+
+        <TextView
+            android:id="@+id/tv_hospital_level"
+            android:layout_width="@dimen/px_70"
+            android:layout_height="@dimen/px_26"
+            android:text="三级A等"
+            android:gravity="center"
+            android:textSize="@dimen/px_14"
+            style="@style/green_tab_bg"
+            android:textColor="@color/white"
+            android:layout_gravity="right|bottom" />
+    </FrameLayout>
+    <!--</RelativeLayout>-->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/px_160"
+        android:layout_toRightOf="@id/rl_image"
+        android:layout_marginLeft="@dimen/px_25"
+        android:orientation="vertical"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_hospital_name"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="首都医科大学附属北京同仁医院"
+            android:textColor="@color/black"
+            android:singleLine="false"
+            android:maxLines="2"
+            android:textSize="@dimen/px_19" />
+
+        <!--<LinearLayout-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="@dimen/px_8">-->
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="200dp"
+            android:text=""
+            android:singleLine="true"
+            android:textColor="@color/top_text"
+            android:layout_marginTop="@dimen/px_8"
+            android:textSize="@dimen/px_18" />
+
+        <!--<TextView-->
+        <!--android:id="@+id/tv_wait_days"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="@dimen/px_10"-->
+        <!--android:textColor="@color/num_color"-->
+        <!--android:text="5"-->
+        <!--android:textSize="@dimen/px_19"-->
+        <!--android:textStyle="bold" />-->
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:singleLine="true"-->
+        <!--android:textColor="@color/top_text"-->
+        <!--android:layout_marginLeft="@dimen/px_10"-->
+        <!--android:textSize="@dimen/px_18"-->
+        <!--android:text="天" />-->
+    </LinearLayout>
+    <!--</LinearLayout>-->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="1dp"
+        android:background="@color/divider_line" />
+</RelativeLayout>

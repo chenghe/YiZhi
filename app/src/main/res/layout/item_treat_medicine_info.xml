@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/selector_enter"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:paddingRight="16dp"
+    android:paddingLeft="16dp"
+    tools:ignore="RtlHardcoded">
+
+    <RelativeLayout
+        android:id="@+id/rl_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="艾司唑仑片"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_marginRight="80dp"
+            android:textColor="@color/text_one"/>
+
+        <TextView
+            android:id="@+id/tv_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_name"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="4dp"
+            android:textSize="13sp"
+            android:text="舒乐安定片"
+            android:textColor="@color/content_two"/>
+
+        <TextView
+            android:id="@+id/tv_cost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="2800元"
+            android:textColor="@color/num_color"/>
+
+        <TextView
+            android:id="@+id/tv_is_medical_special"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_below="@+id/tv_cost"
+            android:layout_alignParentRight="true"
+            android:text="特"
+            android:layout_marginTop="10dp"
+            android:textSize="8sp"
+            android:gravity="center"
+            android:background="@drawable/medicine_index_circle"
+            android:textColor="@color/app_green"
+            android:visibility="visible"/>
+
+        <TextView
+            android:id="@+id/tv_medicalInsurance"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="23dp"
+            android:layout_below="@+id/tv_cost"
+            android:layout_alignParentRight="true"
+            android:text="保"
+            android:textSize="8sp"
+            android:gravity="center"
+            android:background="@drawable/medicine_index_circle"
+            android:textColor="@color/app_green"
+            android:visibility="visible"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

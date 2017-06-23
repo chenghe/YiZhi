@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.zhongmeban">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.WRITE_SMS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+    <!--<uses-permission android:name="android.permission.GET_TASKS"/>-->
+    <!--<uses-permission android:name="android.permission.SET_DEBUG_APP"/>-->
+    <!--<uses-permission android:name="android.permission.GET_ACCOUNTS"/>-->
+    <!--<uses-permission android:name="android.permission.USE_CREDENTIALS"/>-->
+    <!--<uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>-->
+    <!-- QQ、QQ空间所需权限 -->
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.SET_DEBUG_APP"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+
+    <!--<uses-permission android:name="android.permission.RECORD_AUDIO"/>--> <!--正式版 暂时不用蒲公英，注释掉``````蒲公英的，如不需要可以删除 允许程序录制音频 -->
+    <!-- 此节点是为了适配多种分辨率的屏幕，从而可以在代码中得到的手机分辨率是正确的 -->
+    <!-- <supports-screens -->
+    <!-- android:smallScreens="true" -->
+    <!-- android:normalScreens="true" -->
+    <!-- android:largeScreens="true" -->
+    <!-- android:resizeable="true" -->
+    <!-- android:anyDensity="true" /> -->
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        tools:replace="android:allowBackup">
+        <activity
+            android:name=".activity.ActHome"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.ActivitySplash"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme"> <!-- Splash 页面 -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.ActGuide"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/> <!-- 引导页 -->
+        <activity
+            android:name=".activity.ActLoginOrRegister"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysVisible"/> <!-- 登陆/注册 -->
+
+        <activity
+            android:name=".treatmodle.activity.ActKnowTumor"
+            android:screenOrientation="portrait"/> <!-- 认识肿瘤 -->
+        <activity
+            android:name=".treatmodle.activity.ActKnowTumorDetail"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".mymodle.activity.ActivityMy"
+            android:screenOrientation="portrait"/> <!-- 我 -->
+        <activity
+            android:name=".activity.ActivityAboutUs"
+            android:screenOrientation="portrait"/> <!-- 关于我们-->
+        <activity
+            android:name=".activity.ActivityAttenDoctor"
+            android:screenOrientation="portrait"/> <!-- 关注医生 -->
+        <activity
+            android:name=".mymodle.activity.ActivityMyArticle"
+            android:screenOrientation="portrait"/> <!-- 我的文章 -->
+        <activity
+            android:name=".activity.ActivitySetting"
+            android:screenOrientation="portrait"/> <!-- 设置 -->
+        <activity
+            android:name=".activity.ActivityFeedBack"
+            android:screenOrientation="portrait"/> <!-- 意见反馈 -->
+        <activity
+            android:name=".activity.ActivityQuestion"
+            android:screenOrientation="portrait"/> <!-- 我的提问 -->
+        <activity
+            android:name=".activity.ActivityCollected"
+            android:screenOrientation="portrait"/> <!-- 我的收藏 -->
+        <activity
+            android:name=".treatmodle.activity.ActInspection"
+            android:screenOrientation="portrait"/> <!-- 检查项目 -->
+        <activity
+            android:name=".activity.ActivityTherapeuticDetail"
+            android:screenOrientation="portrait"/> <!-- 治疗详情 -->
+        <activity
+            android:name=".activity.ActPharmaceuticalFactory"
+            android:screenOrientation="portrait"/> <!-- 药厂详情 -->
+        <activity
+            android:name=".activity.ActivityMedicieneQuestion"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/> <!-- 药品提问 -->
+        <activity
+            android:name=".activity.ActPharmaceutiaclDetail"
+            android:screenOrientation="portrait"/> <!-- 药品详情 -->
+        <activity
+            android:name=".activity.ActivitySameMedicine"
+            android:screenOrientation="portrait"/> <!-- 同类药品 -->
+        <activity
+            android:name=".activity.ActTest"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:screenOrientation="portrait"/> <!-- 界面测试Activity -->
+        <activity
+            android:name=".treatmodle.activity.ActInspectionDetail"
+            android:screenOrientation="portrait"/>
+        <!-- 检查项目详情 -->
+
+        <activity
+            android:name=".activity.ActivityAddAttention"
+            android:screenOrientation="portrait"/> <!-- 新增患者 -->
+
+        <activity
+            android:name=".treatmodle.activity.ActTreatment"
+            android:screenOrientation="portrait"/> <!-- 治疗方法容器 -->
+        <activity
+            android:name=".treatmodle.activity.ActivityTreatByDis"
+            android:screenOrientation="portrait"/> <!-- 获取某种癌症的某种治疗方法分类的所有治疗方法 -->
+        <activity
+            android:name=".activity.ActTherapeuticDetail"
+            android:screenOrientation="portrait"/> <!-- 治疗方法的详情 -->
+
+        <activity
+            android:name=".activity.ActInterpretationList"
+            android:screenOrientation="portrait"/> <!-- 名词解释 -->
+        <activity
+            android:name=".activity.ActInterpretationDetail"
+            android:screenOrientation="portrait"/> <!-- 名词解释详情 -->
+
+        <activity
+            android:name=".treatmodle.activity.ActDoctLists"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/> <!-- 医生列表页面 -->
+        <activity
+            android:name=".treatmodle.activity.TreatDoctListsActicity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/> <!-- 新医生列表页面 -->
+        <activity
+            android:name=".activity.ActivityHospSelect"
+            android:screenOrientation="portrait"/> <!-- 医生列表筛选页面 -->
+        <activity
+            android:name=".activity.ActivityHospLevel"
+            android:screenOrientation="portrait"/> <!-- 医院等级筛选 -->
+        <activity
+            android:name=".activity.ActivityCitySelect"
+            android:screenOrientation="portrait"/> <!-- 城市筛选 -->
+        <activity
+            android:name=".activity.ActivityCancerSelect"
+            android:screenOrientation="portrait"/> <!-- 肿瘤类型筛选 -->
+        <activity
+            android:name=".activity.ActivityOperationSelect"
+            android:screenOrientation="portrait"/> <!-- 肿瘤类型筛选 -->
+        <activity
+            android:name=".activity.ActivityDoctLevelSelect"
+            android:screenOrientation="portrait"/> <!-- 医生级别筛选 -->
+
+        <activity
+            android:name=".treatmodle.activity.ActDoctDetail"
+            android:screenOrientation="portrait"/> <!-- 医生详情容器 -->
+        <!-- 筛选条件容器 -->
+        <activity
+            android:name=".activity.ActComment"
+            android:screenOrientation="portrait"/>
+        <!-- 医生评论 -->
+
+        <activity
+            android:name=".treatmodle.activity.ActHospLists"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/> <!-- 医院列表页面 -->
+        <activity
+            android:name=".treatmodle.activity.TreatHospListsActicity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/> <!-- 新医院列表页面 -->
+        <activity
+            android:name=".treatmodle.activity.ActHospDetail"
+            android:screenOrientation="portrait"/> <!-- 医院详情容器 -->
+        <!-- 筛选条件容器 -->
+
+        <activity
+            android:name=".treatmodle.activity.ActMedicineChest"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/> <!-- 药箱子/药物列表容器act -->
+        <activity
+            android:name=".activity.ActDrugDetail"
+            android:screenOrientation="portrait"/> <!-- 药物详情页面 -->
+        <activity
+            android:name=".activity.ActComment1"
+            android:screenOrientation="portrait"/> <!-- 药品-提问题 -->
+        <activity
+            android:name=".activity.ActRelativeDrugs"
+            android:screenOrientation="portrait"/> <!-- 同类型药品列表 -->
+
+        <activity
+            android:name=".activity.ActDrugFactDetails"
+            android:screenOrientation="portrait"/>
+        <!-- 药厂详情 -->
+        <activity
+            android:name=".treatmodle.activity.ActIndicators"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan"/> <!-- 指标页面 -->
+        <activity
+            android:name=".treatmodle.activity.ActIndicatorsDetail"
+            android:screenOrientation="portrait"/> <!-- 指标详情 -->
+
+        <activity
+            android:name=".treatmodle.activity.ActTips"
+            android:screenOrientation="portrait"/> <!-- 小贴士页面容器Act -->
+        <activity
+            android:name=".treatmodle.activity.ActTipsDetails"
+            android:screenOrientation="portrait"/>
+        <!-- 小贴士详情 -->
+        <activity
+            android:name=".treatmodle.activity.TreatNewsDetailActivity"
+            android:screenOrientation="portrait"/>
+        <!-- 新闻详情 -->
+
+        <activity
+            android:name=".treatmodle.activity.TreatShareWebActivity"
+            android:screenOrientation="portrait">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data
+                    android:host="test.yizhi360.com:6064"
+                    android:scheme="http"/>
+                <!--<data android:scheme="https" android:host="www.example.com" />-->
+            </intent-filter>
+
+        </activity>
+        <!-- 分享新闻详情 -->
+        <activity
+            android:name=".activity.ActNewsDetails"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".attentionmodle.activity.ActivityAttentionList"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateHidden"/> <!-- 关注通用列表 -->
+
+        <activity
+            android:name=".activity.ActivityAddNewMarker"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/> <!-- 添加新的标志物 -->
+        <activity
+            android:name=".activity.ActivityChangeUserName"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/> <!-- 更改用户姓名-->
+
+        <activity
+            android:name=".activity.ActivityMarkerDetail"
+            android:screenOrientation="portrait"/> <!-- 标志物详情 -->
+
+        <activity
+            android:name=".attentionmodle.activity.ActivityAttentionMedicineList"
+            android:screenOrientation="portrait"/> <!-- 用药记录列表 -->
+        <activity
+            android:name=".attentionmodle.activity.AttentionOperationDetailActivity"
+            android:screenOrientation="portrait"/> <!-- 手术详情 -->
+        <activity
+            android:name=".attentionmodle.activity.ActivityAttentionAddOperation"
+            android:screenOrientation="portrait"/> <!-- 添加手术项 -->
+        <activity
+            android:name=".attentionmodle.activity.AttentionSurgeryMethordsActivity"
+            android:screenOrientation="portrait"/> <!-- 其他手术项 -->
+        <activity
+            android:name=".attentionmodle.activity.AttentionSurgeryListActivity"
+            android:screenOrientation="portrait"/> <!-- 选择手术项 手术列表 -->
+        <activity
+            android:name=".attentionmodle.activity.AttentionAddOperationActivity"
+            android:screenOrientation="portrait"/> <!-- 添加手术项 1.0.2 -->
+        <activity
+            android:name=".attentionmodle.activity.AttentionAddHospOperationActivity"
+            android:screenOrientation="portrait"/> <!-- 住院添加手术项 1.0.2 -->
+        <activity
+            android:name=".attentionmodle.activity.AttentionHospitalizedDetailActivity"
+            android:screenOrientation="portrait"/> <!-- 住院详情 -->
+
+        <activity
+            android:name=".attentionmodle.activity.AttentionHospChooseActivity"
+            android:screenOrientation="portrait"/> <!-- 医院筛选 -->
+
+        <activity
+            android:name=".attentionmodle.activity.AttentionAddHospitalizedActivity"
+            android:screenOrientation="portrait"/> <!-- 新增住院 1.0.2 -->
+
+        <activity
+            android:name=".attentionmodle.activity.ActivityAttentionAddRadiotherapy"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/> <!-- 新增放疗 -->
+        <activity
+            android:name=".attentionmodle.activity.AttentionRadiotherapyDetailActivity"
+            android:screenOrientation="portrait"/> <!-- 放疗详情 -->
+
+        <activity
+            android:name=".attentionmodle.activity.AttentionAddRadiotherapyActivity"
+            android:screenOrientation="portrait"/> <!-- 新增放疗 1.0.2 -->
+        <activity
+            android:name=".attentionmodle.activity.ActivityAttentionStopRadiotherapy"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/><!-- 停止放疗 -->
+        <activity
+            android:name=".attentionmodle.activity.ActivityAttentionPauseRadiotherapy"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/><!-- 暂停放疗 -->
+
+        <activity
+            android:name=".attentionmodle.activity.ActivityAttentionAddMedicine"
+            android:screenOrientation="portrait"/> <!-- 新增用药 -->
+        <activity
+            android:name=".attentionmodle.activity.ActivityAttentionSimpleHospital"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/> <!-- 关注医院筛选 -->
+        <activity
+            android:name=".attentionmodle.activity.ActivityAttentionMedicineDetail"
+            android:screenOrientation="portrait"/> <!-- 用药筛选 -->
+        <activity
+            android:name=".attentionmodle.activity.ActivityAttentionSimpleDoctor"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/> <!-- 关注医生筛选 -->
+        <activity
+            android:name=".activity.ActivityStopChemotherapy"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity> <!-- 停止化疗-->
+        <activity
+            android:name=".attentionmodle.activity.ActivityAttentionTherapeuticByDisId"
+            android:screenOrientation="portrait"/> <!-- 关注获取某种癌症的某种治疗方法分类的所有治疗方法 -->
+        <activity
+            android:name=".activity.ActivityCardLogin"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Translucent"
+            android:windowSoftInputMode="stateAlwaysHidden"/> <!-- 登录界面 -->
+        <activity
+            android:name=".attentionmodle.activity.ActivityAttentionNoticePop"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Translucent"/> <!-- 异常信息提示 -->
+        <activity
+            android:name=".attentionmodle.activity.ActivityAttentionNoticesList"
+            android:screenOrientation="portrait"/> <!-- 异常信息提示列表 -->
+        <activity
+            android:name=".attentionmodle.activity.ActivityAttentionChatDetail"
+            android:screenOrientation="landscape"/> <!-- 关注图表详情 -->
+        <activity
+            android:name=".shopmodle.activity.ActProductDetail"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity><!-- 商品详情页面 -->
+        <activity
+            android:name=".shopmodle.activity.ActProductBrowser"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity><!-- 浏览商品大图 -->
+
+        <activity
+            android:name=".shopmodle.activity.ActShoppingCart"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity> <!-- 购物车 -->
+        <activity
+            android:name=".shopmodle.activity.ActShoppingCheckout"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity> <!-- 收银台 -->
+        <activity
+            android:name=".shopmodle.activity.ActAddAddress"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity> <!-- 添加地址 -->
+        <activity
+            android:name=".shopmodle.activity.ActAddressList"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity> <!-- 地址管理列表-->
+        <activity
+            android:name=".shopmodle.activity.ActAddressSelect"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity> <!-- 提交订单的地址选择列表 -->
+        <activity
+            android:name=".shopmodle.activity.ActOrderProductList"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity> <!-- 提交订单的商品清单列表 -->
+        <activity
+            android:name=".treatmodle.activity.ActivityMyDoctor"
+            android:screenOrientation="portrait"/> <!-- 关注医生 -->
+        <activity
+            android:name=".attentionmodle.activity.ActivityAttentionHospitalizedOperation"
+            android:screenOrientation="portrait"/> <!-- 住院手术关联信息 -->
+        <activity
+            android:name=".mymodle.activity.ActivityMyMedicine"
+            android:screenOrientation="portrait"/> <!-- 收藏的药品 -->
+        <activity
+            android:name=".mymodle.activity.ActivityMyTreatment"
+            android:screenOrientation="portrait"/> <!-- 收藏的治疗方式 -->
+        <activity
+            android:name=".treatmodle.activity.ActivityMyCollectionInfo"
+            android:screenOrientation="portrait"/> <!-- 收藏的内容 -->
+        <activity
+            android:name=".activity.ActivityCollectionCommodity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/> <!-- 我收藏的商品 -->
+        <activity
+            android:name=".activity.ActivityOrderList"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/> <!-- 提交订单的商品清单列表 -->
+        <activity
+            android:name=".mymodle.activity.ActivityMyInfo"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/> <!-- 我的信息activity -->
+        <activity
+            android:name=".shopmodle.activity.ActShopBannerInfo"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/> <!-- 商品轮播图点击后的 -->
+        <!--1.01  新版添加页面-->
+
+        <activity
+            android:name=".treatmodle.activity.TreatMedicineTypeListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/> <!-- 药品分类列表 -->
+        <activity
+            android:name=".treatmodle.activity.TreatMedicineListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/> <!-- 药品信息列表 -->
+        <activity
+            android:name=".treatmodle.activity.TreatMedicineListSelectActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/> <!-- 关注模块选择药品信息列表 -->
+        <activity
+            android:name=".treatmodle.activity.TreatMedicineBrandListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/> <!-- 药品品牌信息列表 -->
+        <activity
+            android:name=".treatmodle.activity.TreatCancerTypeListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/> <!-- 癌症分类列表 -->
+        <activity
+            android:name=".treatmodle.activity.TreatTreatMethodActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/> <!-- 治疗方式列表 -->
+        <activity
+            android:name=".treatmodle.activity.TreatCommonSeatchListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/> <!-- 搜索列表 -->
+        <activity
+            android:name=".attentionmodle.activity.AttentionAddChemothRecordActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/> <!-- 新增化疗 -->
+        <activity
+            android:name=".attentionmodle.activity.AttentionChemothRecordDetailActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/> <!-- 化疗详情 -->
+
+        <activity
+            android:name=".attentionmodle.activity.AttentionAddAssistMedicineActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/> <!-- 新增辅助用药 -->
+        <activity
+            android:name=".attentionmodle.activity.AttentionAssistMedicineDetailDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/> <!-- 辅助用药详情 -->
+        <!-- tencent -->
+        <activity
+            android:name="com.umeng.qq.tencent.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data android:scheme="tencent100424468"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.umeng.qq.tencent.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+
+        <!--广播-->
+        <receiver android:name=".utils.broadcast.NetStateBroadCast">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <!--支付宝支付相关-->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"></activity>
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"></activity>
+
+        <!--微信分享信息-->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity
+            android:name="com.umeng.socialize.editorpage.ShareActivity"
+            android:excludeFromRecents="true"
+            android:theme="@style/Theme.UMDefault"/>
+
+        <!--&lt;!&ndash;新浪微博&ndash;&gt;-->
+        <activity
+            android:name=".WBShareActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize"></activity>
+
+        <!-- 蒲公英 必选-->
+        <meta-data
+            android:name="PGYER_APPID"
+            android:value="491635cd28b53e93005a334992cbc995"></meta-data>
+        <!--友盟统计信息-->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="57ecd5f267e58e9df2000062"></meta-data>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="${UMENG_CHANNEL_VALUE}"/>
+    </application>
+
+</manifest>

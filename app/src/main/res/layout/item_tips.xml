@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/px_15"
+    android:paddingLeft="@dimen/px_20"
+    android:paddingRight="@dimen/px_20"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/px_24"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/tv_abstract"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px_10"
+        android:lines="2"
+        android:ellipsize="end"
+        android:textSize="@dimen/px_20"
+        android:lineSpacingExtra="@dimen/px_5"
+        android:textScaleX="1.0"
+        android:textColor="@color/content_two"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="@dimen/px_16"
+        android:textColor="@color/annotation_little"
+        android:gravity="center_vertical"
+        android:layout_marginTop="@dimen/px_15"
+        android:drawableLeft="@drawable/time"
+        android:drawablePadding="@dimen/px_10" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_0.5"
+        android:background="@color/gray_c4"
+        android:layout_marginTop="@dimen/px_15" />
+
+</LinearLayout>

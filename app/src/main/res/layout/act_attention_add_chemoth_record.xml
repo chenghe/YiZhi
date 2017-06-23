@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/title_bg">
+
+    <include layout="@layout/toolbar_view"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_space"/>
+
+        <include layout="@layout/layout_divider"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="化疗目的"
+            android:paddingLeft="16dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:textColor="@color/content_two"
+            android:textSize="14sp"/>
+
+        <include layout="@layout/layout_divider"/>
+
+        <com.zhongmeban.view.TagFlowBoxLayout
+            android:id="@+id/lvh_check_target"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"></com.zhongmeban.view.TagFlowBoxLayout>
+
+        <include layout="@layout/layout_divider"/>
+
+        <include layout="@layout/layout_space"/>
+
+        <include layout="@layout/layout_divider"/>
+
+        <com.zhongmeban.view.CommonEditView
+            android:id="@+id/et_chemoth_doctor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:left_text="主治医师："
+            app:right_et="请填写医生名称（非必填）"/>
+
+        <include layout="@layout/layout_divider_padding"/>
+
+        <com.zhongmeban.view.CommonEditView
+            android:id="@+id/et_chemoth_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:left_text="开始日期："
+            app:right_text="请选择开始日期"/>
+
+        <include layout="@layout/layout_divider_padding"/>
+
+        <com.zhongmeban.view.CommonEditView
+            android:id="@+id/et_chemoth_circle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:left_text="预计周期数："
+            app:right_text="请选择周期数"/>
+
+        <include layout="@layout/layout_divider"/>
+
+        <include layout="@layout/layout_space"/>
+
+        <include layout="@layout/layout_divider"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:text="化疗药物"
+                android:textColor="@color/content_two"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/tv_add_medicine"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="添加"
+                android:textColor="@color/app_green"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textSize="14sp"
+                android:layout_marginRight="20dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/divider_line"/>
+        </RelativeLayout>
+
+        <com.zhongmeban.view.MyListView
+            android:id="@+id/lv_attention_chemo_add_medicine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:orientation="vertical"/>
+
+        <include layout="@layout/layout_divider"/>
+
+        <include layout="@layout/layout_space"/>
+
+        <include layout="@layout/layout_divider"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="治疗备注"
+            android:paddingLeft="16dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:textColor="@color/content_two"
+            android:textSize="14sp"/>
+
+        <include layout="@layout/layout_divider"/>
+
+        <com.zhongmeban.view.TagFlowBoxLayout
+            android:id="@+id/id_flow_tag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="6dp"></com.zhongmeban.view.TagFlowBoxLayout>
+
+        <include layout="@layout/layout_divider_padding"/>
+
+        <EditText
+            android:id="@+id/et_content_remark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="100dp"
+            android:background="@null"
+            android:padding="16dp"
+            android:hint="@string/content_hint_text"
+            android:gravity="start"
+            android:textSize="@dimen/textsize_hint"/>
+
+    </LinearLayout>
+
+    <include layout="@layout/layout_space"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/title_bg"
+        android:orientation="vertical">
+
+        <Button
+            style="@style/AttentionButtonGreen"
+            android:id="@+id/bt_save"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="40dp"
+            android:text="@string/button_save"/>
+    </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+    </LinearLayout>

@@ -1,0 +1,267 @@
+<resources>
+    <string name="app_name">易治</string>
+    <string name="action_settings">Settings</string>
+    <string name="company">healthcareworks</string>
+
+    <string name="empty_info">暂时没有相关信息</string>
+
+    <string name="load_empty">暂时没有相关信息</string>
+    <string name="Load_fail">加载失败</string>
+
+    <!--button -->
+    <string name="button_save">保存</string>
+    <string name="button_edit">编辑</string>
+    <string name="button_delete">删除</string>
+
+    <!-- 内容详情备注 -->
+    <string name="content_hint_text">您可以输入相关信息，以便后续查阅</string>
+    <!-- 登陆注册 -->
+    <string name="sendVertifyCode">发送验证码</string>
+    <string name="application">Application</string>
+    <string name="login_rigister">登录/注册</string>
+    <string name="phoneNumer">手机号</string>
+    <string name="getVertifyCode">获取验证码</string>
+    <string name="jump">跳过</string>
+    <string name="pleaseInputYourPhoneNumer">请输入您的手机号</string>
+
+    <!--网络加载各种状态的文案-->
+    <string name="load_no_net">网络连接不顺畅~\n点击屏幕刷新</string>
+    <string name="load_no_data">暂时没有相关信息~</string>
+    <string name="load_no_search">没有搜索结果~</string>
+    <string name="load_ing">正在拼命加载···</string>
+
+    <!-- title的 -->
+    <string name="cancel">取消</string>
+    <string name="default_string">文本</string>
+    <string name="default_title">标题</string>
+
+    <string name="itoolKits">工具箱</string>
+    <string name="treasureChest">百宝箱</string>
+    <string name="news">新闻资讯</string>
+    <string name="all">全部</string>
+    <string name="collection">收藏</string>
+
+    <string name="allDrugs">全部药品</string>
+    <string name="drugBrand">品牌专区</string>
+    <string name="drugCollect">药品收藏</string>
+
+    <!-- 首页七大菜单  -->
+    <string name="baike">百科</string>
+    <string name="doctor">医生</string>
+    <string name="hospital">医院</string>
+    <string name="drug">药品</string>
+    <string name="indicators">指标</string>
+    <string name="tips">小贴士</string>
+    <string name="developing">开发中</string>
+
+    <!--  百科的二级菜单 -->
+    <string name="knowTumer">认识肿瘤</string>
+    <string name="treament">治疗方法</string>
+    <string name="inspection">检查项目</string>
+    <string name="nounExplaning">名词解释</string>
+
+    <!-- 指标的二级菜单 -->
+    <string name="huayandan">化验单</string>
+    <string name="indicatorexplain">指标解释</string>
+
+    <!-- 医生详情 -->
+    <string name="introduce">介绍</string>
+    <string name="goodat">专长</string>
+    <string name="operation">手术</string>
+    <string name="recommended_degree">推荐度</string>
+    <string name="compre_recomm_degree">综合推荐度</string>
+    <string name="choose_goodat">选择专长</string>
+    <string name="overview">简介</string>
+    <string name="common_cause">常见病因</string>
+    <string name="advice">建议</string>
+    <string name="screening">筛选</string>
+    <string name="medical_case">案例</string>
+    <string name="visits">出诊</string>
+
+    <!-- 医生查询的筛选条件 -->
+    <string name="tumer_type">肿瘤类型</string>
+    <string name="treat_city">治疗城市</string>
+    <string name="treat_area">治疗城区</string>
+    <string name="hospital_level">医院等级</string>
+    <string name="doctor_level">医生级别</string>
+
+    <!-- 医生筛选条件提示文案 -->
+    <string name="please_choose_tumer_type">请选择肿瘤类型</string>
+    <string name="please_choose_treat_city">请选择治疗城市</string>
+    <string name="please_choose_treat_area">请选择治疗城区</string>
+    <string name="please_choose_hospital_level">请选择医院等级</string>
+    <string name="please_choose_doctor_level">请选择医生级别</string>
+    <string name="please_choose_doctor_operation">选择是否可手术</string>
+    <string name="doctor_whether_can_operation">是否可手术</string>
+    <string name="doctor_can_operation">医生可以手术</string>
+    <string name="doctor_cannot_operation">医生不可以手术</string>
+
+    <string name="lesion_location">病变位置</string>
+    <string name="diagnosis_method">确诊手段</string>
+    <string name="installment_explain">分期解释</string>
+
+    <string name="name">名称</string>
+    <string name="advantage">优势</string>
+    <string name="disadvantage">劣势</string>
+    <string name="prepare">准备期</string>
+    <string name="operateDuring">手术期</string>
+    <string name="operate">操作期</string>
+    <string name="interval">间隔期</string>
+    <string name="convalescence">康复期</string>
+
+    <string name="costEstimates">费用预估</string>
+    <string name="nounIntroduction">名词简介</string>
+    <string name="determinContent">测定内容</string>
+    <string name="testCycle">化验周期</string>
+    <string name="miseryIndex">痛苦指数</string>
+
+    <string name="checkIntro">@string/nounIntroduction</string>
+    <string name="checkCycle">检查周期</string>
+
+    <!-- 药品详情-简介 -->
+    <string name="supplierInfo">厂商信息</string>
+    <string name="chemicalName">化学名称</string>
+    <string name="adaptionDiease">适应症</string>
+    <string name="usage">用法用量</string>
+    <string name="taboo">禁忌</string>
+    <string name="otherSameTypeDrug">其他同类型药品</string>
+
+    <string name="unAnswer">该问题还未回答，您可以直接致电药厂了解详情。</string>
+
+    <string name="diseasePosition">病变位置</string>
+    <string name="dominantCharacter">显性特征</string>
+    <string name="diagnosisMethod">确诊手段</string>
+    <string name="installmentExplain">分期解释</string>
+
+    <string name="basicInfo">基本信息</string>
+    <string name="drugLists">药品列表</string>
+    <string name="company_name">公司名称</string>
+    <string name="company_description">公司描述</string>
+    <string name="company_location">总部地点</string>
+    <string name="build_time">成立时间</string>
+    <string name="business_scope">经营范围</string>
+    <string name="company_nature">公司性质</string>
+    <string name="company_slogan">公司口号</string>
+    <string name="founding_company">创始公司</string>
+
+    <string name="create_time">发布日期：</string>
+
+    <string name="testCon">我是测试我是测试我是测试我是测试我是测试我是测试我是测试我是测试我是测试我是测试我是测试我是测试我是测试我是测试</string>
+    <string name="testCon1">我是我是测试</string>
+    <string name="testCon2">我是测试我是测试我是测试我是测试我是测试我是测试我是测试我是测试我是测试我是测试我是测我是测试我是测试我是测试我是测试我是测试我是测试我是测试我是测试我是测试我是测试我是测试我是测试我是测试我是测试我是测试我是测试我是测试</string>
+
+    <!-- 自定义pull2refresh -->
+    <string name="last_update_time">上次更新时间: </string>
+    <string name="KEY_TAG_FREEZEABLE">KEY_TAG_FREEZEABLE</string>
+    <string name="pull_down_for_refresh">下拉刷新</string>
+    <string name="release_for_refresh">松开刷新</string>
+    <string name="refreshing">正在刷新&#8230;</string>
+
+    <!-- XListView文案 -->
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+
+    <string-array name="passwordTypeArr">
+        <item>numberPassword</item>
+        <item>textPassword</item>
+        <item>textVisiblePassword</item>
+        <item>textWebPassword</item>
+    </string-array>
+
+    <string-array name="menusName"> <!-- 首页菜单 -->
+        <item>百科</item>
+        <item>医生</item>
+        <item>医院</item>
+        <item>药品</item>
+        <item>指标</item>
+        <item>小贴士</item>
+        <item>开发中</item>
+    </string-array>
+
+    <string-array name="menusName1"> <!-- 首页菜单修改v1 -->
+        <item>医生查询</item>
+        <item>医院查询</item>
+        <item>费用预估</item>
+        <item>检查项目</item>
+        <item>指标解读</item>
+        <item>治疗方法</item>
+        <item>药品指南</item>
+        <item>认识肿瘤</item>
+        <item>名词解释</item>
+        <item>小贴士</item>
+    </string-array>
+
+    <string-array name="menusName2"> <!-- 首页菜单修改v2 -->
+        <item>医生查询</item>
+        <item>医院查询</item>
+        <item>检查项目</item>
+        <item>指标解读</item>
+        <item>治疗方法</item>
+        <item>药品指南</item>
+        <item>认识肿瘤</item>
+        <item>名词解释</item>
+        <item>小贴士</item>
+    </string-array>
+
+    <string-array name="baike_menu"> <!-- 百科的二级菜单 -->
+        <item>认识肿瘤</item>
+        <item>治疗方法</item>
+        <item>检查项目</item>
+        <item>名词解释</item>
+    </string-array>
+
+    <string-array name="hosp_level"><!-- 医院等级 -->
+        <item>全部</item>
+        <item>一级</item>
+        <item>一级甲等</item>
+        <item>二级</item>
+        <item>二级甲等</item>
+        <item>三级</item>
+        <item>三级甲等</item>
+    </string-array>
+
+    <string-array name="doct_level">  <!-- 医生级别 -->
+        <item>全部</item>
+        <item>主任医师</item>
+        <item>副主任医师</item>
+    </string-array>
+
+    <string-array name="doct_operation"> <!-- 医生是否可手术 -->
+        <item>全部</item>
+        <item>可手术</item>
+        <item>不可手术</item>
+    </string-array>
+
+    <string name="read_more">展开</string>
+    <string name="read_less">收起</string>
+
+    <string name="expand">展开</string>
+    <string name="shrink">收起</string>
+
+    <string name="qv_add">+</string>
+    <string name="qv_remove">-</string>
+    <!-- 测试数据 -->
+      <string name="lipsum">Lorem ipsum dolor sit amet, ut duis lorem provident sed felis blandit, condimentum donec lectus ipsum et mauris, morbi porttitor interdum feugiat nulla donec sodales, vestibulum nisl primis a molestie vestibulum quam, sapien mauris metus risus suspendisse magnis. Augue viverra nulla faucibus egestas eu, a etiam id congue rutrum ante, arcu tincidunt donec quam felis at ornare, iaculis ligula sodales venenatis commodo volutpat neque, suspendisse elit praesent tellus felis mi amet. Inceptos amet tempor lectus lorem est non, ac donec ac libero neque mauris, tellus ante metus eget leo consequat. Scelerisque dolor curabitur pretium blandit ut feugiat, amet lacus pulvinar justo convallis ut, sed natoque ipsum urna posuere nibh eu. Sed at sed vulputate sit orci, facilisis a aliquam tellus quam aliquam, eu aliquam donec at molestie ante, pellentesque mauris lorem ultrices libero faucibus porta, imperdiet adipiscing sit hac diam ut nulla. Lacus enim elit pulvinar donec vehicula dapibus, accumsan purus officia cursus dolor sapien, eu amet dis mauris mi nulla ut. Non accusamus etiam pede non urna tempus, vestibulum aliquam tortor eget pharetra sodales, in vestibulum ut justo orci nulla, lobortis purus sem semper consectetuer magni purus. Dolor a leo vestibulum amet ut sit, arcu ut eaque urna fusce aliquet turpis, sed fermentum sed vestibulum nisl pede, tristique enim lorem posuere in laborum ut. Vestibulum id id justo leo nulla, magna lobortis ullamcorper et dignissim pellentesque, duis suspendisse quis id lorem ante. Vivamus a nullam ante adipiscing amet, mi vel consectetuer nunc aenean pede quisque, eget rhoncus dis porttitor habitant nunc vivamus, duis cubilia blandit non donec justo dictumst, praesent vitae nulla nam pulvinar urna. Adipiscing adipiscing justo urna pulvinar imperdiet nullam, vitae fusce rhoncus proin nonummy suscipit, ullamcorper amet et non potenti platea ultrices, mauris nullam sapien nunc justo vel, eu semper pellentesque arcu fusce augue. Malesuada mauris nibh sit a a scelerisque, velit sem lectus tellus convallis consectetuer, ultricies auctor a ante eros amet sed.\n\n
+Risus lacus duis leo platea wisi, felis maecenas rutrum in id in donec, non id a potenti libero eget, posuere elit ea sed pellentesque quis. Sunt lacus urna lorem elit duis, nibh donec purus quisque consectetuer dolor, neque vestibulum proin ornare eros nonummy phasellus. Iaculis cras eu at egestas dolor montes, viverra quisque malesuada consectetuer semper maecenas, a sed vitae donec tempor aliqua metus, ornare mollis suscipit et erat fusce, sit orci aut auctor elementum fames aliquam. Platea dui integer magnis non metus, minus dignissimos ante massa nostra et, rutrum sapien egestas quis sapien donec donec. Erat sit a eros aenean natoque, quam libero id lorem enim proin, lorem ipsum fermentum mattis metus et. Aliquam aliquet suscipit purus conubia at neque, platea vivamus vestibulum nulla quibusdam senectus, et morbi lectus malesuada gravida donec, elementum sit convallis pellentesque velit amet. Et eveniet viverra vehicula consectetuer justo, provident sed commodo non lacinia velit, tempor phasellus vel leo nisl cras, vivamus et arcu interdum dui eu amet. Volutpat wisi rhoncus vel turpis diam quibusdam, dapibus elit est quisque cubilia mauris, nulla elit magna tempor accumsan bibendum, lorem varius sed interdum eget mattis, scelerisque egestas feugiat donec dui molestie. Leo facilisis nisl sit montes ligula sed, enim commodo consectetuer nunc est et, ut sed vehicula dolor luctus elit. Fermentum cras donec eget nibh est vel, sed justo risus et pharetra diam, eu vivamus egestas ligula risus diam, sed justo eget hac ut mauris. Vestibulum diam nec vitae mi eget suspendisse, aenean arcu purus facilisis purus class in, id aliquam sit id scelerisque sapien etiam. Ut nullam sit sed at mauris lobortis, consequat dolor autem ipsum euismod nulla, elit quis proin eget conubia varius, erat arcu massa mus in mauris, scelerisque ut eu sollicitudin libero leo urna.\n\n
+Consectetuer luctus tempor elit ut dolor ligula, quis dui per dui hendrerit ante sagittis, in quisque pretium in eleifend enim. Condimentum iaculis vitae feugiat dis tellus vel, lectus dolor nec dui nulla nascetur, et pellentesque curabitur lorem leo velit eget. Id nascetur arcu lobortis suspendisse imperdiet urna, natoque nascetur ante in porta a, interdum hendrerit mi bibendum platea tellus, urna in enim ornare vestibulum faucibus enim. Leo fusce egestas ante nec volutpat, in tempor vel facilisis potenti ut, pede at non lorem a commodo, nulla dolor orci interdum vestibulum nulla. Dui nulla vestibulum quisque a pharetra porta, integer nec ipsum nec sed dui pharetra, magna et dignissim ipsum sed dictum, litora eros vivamus scelerisque libero ipsum. Sed ac ac lorem molestie adipiscing morbi, pellentesque imperdiet nunc quis morbi amet ante, libero dui ligula nec risus neque et, velit nonummy phasellus et facilisi amet, ligula in elementum non sapien pulvinar faucibus. Eu leo ut posuere sed aliquet, tincidunt vel urna volutpat tempus sem, sit felis aliquet vestibulum condimentum sit, amet nibh vel tellus purus ullamcorper libero, nulla vestibulum pede ut vestibulum pretium. Eu nulla vestibulum a neque in metus, quisquam nam sed cursus eget luctus, pede ultrices nec sed dignissim pellentesque, sit class cursus metus nulla placerat mauris, consequat mollis neque vivamus amet pede. Mauris dolor nulla diam eros bibendum, quam ante vestibulum morbi non ligula vel, molestie curabitur rhoncus nulla euismod interdum non. Nulla fringilla lorem mollis ad massa, sit molestie nibh lorem arcu volutpat, accumsan commodo lectus eu et donec, sit tempor tempus rutrum in curabitur amet. Nec urna euismod a tincidunt commodo, eu pede turpis libero vitae viverra, ante vestibulum nam non habitasse potenti, mauris imperdiet in in nunc convallis. Et nostra wisi in est accumsan vehicula, quisque vitae felis mauris sed vulputate nec, ante imperdiet sollicitudin massa iaculis massa sit.\n\n
+Quam libero nulla netus eu porta curae, ut nulla bibendum facilisis et urna sed, quis congue vestibulum aliquam interdum etiam. Nulla vel lobortis ullamcorper vitae excepturi, neque urna feugiat lectus vel lacinia, massa pretium orci eu metus neque vulputate. Imperdiet ac velit rhoncus nulla malesuada nullam, nec pulvinar justo gravida lorem rutrum magna, habitasse repudiandae mi eros vestibulum ante, nec euismod dui iaculis in turpis pretium, ac id metus egestas proin lacus lectus. Laoreet lorem nec vitae risus erat arcu, vitae quam ut in ante tristique, porta dolor pede quam et odio nam, arcu lacus sem congue ante cursus massa. Et mattis sagittis erat accumsan fusce quam, vehicula ligula beatae natoque fusce sodales conubia, habitasse metus cum magnis viverra nam cursus, egestas urna wisi primis blandit eu magna, eget libero elit lacus lorem dis aliquam. Ut mauris ante natoque lacus massa, justo a lectus sodales enim adipiscing id, accumsan ut ipsum vestibulum sed enim auctor, vitae congue tincidunt id phasellus lacinia scelerisque, tincidunt sapien nulla euismod volutpat iaculis. Platea sociis nec aliquet nec molestie, in mi et augue sapien in vivamus, integer fames proin vitae in ullamcorper et. Fringilla etiam sapiente rhoncus suspendisse nec id, lobortis cras eget egestas dui ac nec, justo lacus ut lorem bibendum quia eros, eget a gravida id donec nunc suscipit, porta sed in sodales non rutrum. Lectus vel dui elementum pellentesque magna aliquam, vitae non sit pede et fusce nibh, id id deserunt ornare dui sit condimentum, in adipiscing imperdiet turpis nam aliquet, facilisis metus magna lacus wisi facilisis tortor. Vulputate elit accumsan quam amet ligula, suspendisse lacus mi nonummy integer urna, libero nulla nunc varius in odio, laoreet nulla amet placerat amet nec. Consectetuer vel massa hendrerit vitae iaculis id, sed ut ut laudantium odio in, elit vestibulum duis ante maecenas interdum in, neque vehicula ultrices varius in quam, pede tellus pellentesque sed nullam quis.</string>
+    <string name="title_activity_act_product_detail">ActProductDetail</string>
+    <string name="title_activity_act_shopping_cart">ActShoppingCart</string>
+    <string name="agree">确定</string>
+    <string name="cancle">取消</string>
+    <string name="desc_check_mark">请选择</string>
+    <!-- <string name="expend_test_content"> </string>-->
+    <string name="expend_test_content">我是很长的数据我是很长的数据我是很长的数据
+        我是很长的数据我是很长的数据我是很长我是很长的数据我是很长的数据我是很长的数据我是很长的数据我是很长的数据我是很长
+    我是很长的数据我是很长的数据我是很长的数据我是很长的数据我是很长的数据我是很长
+    我是很长的数据我是很长的数据我是很长的数据我是很长的数据我是很长的数据我是很长
+    我是很长的数据我是很长的数据我是很长的数据我是很长的数据我是很长的数据我是很长
+        我是很长的数据我是很长的数据我是很长的数据我是很长的数据我是很长的数据我是很长</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

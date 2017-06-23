@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?><!--关注带索引公用布局-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+    <!-- 这是标题 -->
+    <include layout="@layout/toolbar_view"/>
+    <!-- 这是搜索栏 -->
+    <include
+        android:id="@+id/layout_searchbar"
+        layout="@layout/view_search"
+        android:visibility="gone"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white">
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@android:color/transparent"
+            android:scrollbars="none"/>
+
+        <include layout="@layout/include_empty_view"/>
+    </FrameLayout>
+
+</LinearLayout>

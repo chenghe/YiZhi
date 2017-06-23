@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/px_180"
+    android:gravity="center_vertical"
+    android:paddingTop="@dimen/px_10"
+    android:orientation="vertical"
+    android:descendantFocusability="blocksDescendants">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="@dimen/px_20"
+        android:layout_marginRight="@dimen/px_20">
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/doct_image"
+            android:layout_width="@dimen/px_90"
+            android:layout_height="@dimen/px_100"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/px_20"
+            android:scaleType="fitXY"
+            android:src="@drawable/demo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/px_10"
+            android:layout_toRightOf="@id/doct_image"
+            android:orientation="vertical"
+            android:paddingRight="@dimen/px_10">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_15"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="父亲"
+                    android:textColor="@color/little_black"
+                    android:textSize="@dimen/px_26" />
+
+                <TextView
+                    android:id="@+id/tv_age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tv_name"
+                    android:layout_marginLeft="@dimen/px_15"
+                    android:text="70岁"
+                    android:textColor="@color/little_black"
+                    android:textSize="@dimen/px_26" />
+
+                <ImageView
+                    android:id="@+id/image_warn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tv_age"
+                    android:layout_marginLeft="@dimen/px_15"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/warning" />
+
+
+                <ImageView
+                    android:id="@+id/image_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="@dimen/px_15"
+                    android:src="@drawable/delete1" />
+
+                <ImageView
+                    android:id="@+id/image_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/edit"
+                    android:layout_toLeftOf="@id/image_delete" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_sick_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_10"
+                android:paddingRight="@dimen/px_2"
+                android:singleLine="true"
+                android:text="2014年11月11日确诊胃癌"
+                android:textSize="@dimen/px_16"
+                android:textColor="@color/text_color1"
+                android:drawableLeft="@drawable/calender"
+                android:drawablePadding="@dimen/px_10" />
+
+            <TextView
+                android:id="@+id/tv_review_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_10"
+                android:paddingRight="@dimen/px_2"
+                android:singleLine="true"
+                android:text="最近复查2015年10月10日 至今30天"
+                android:textSize="@dimen/px_16"
+                android:textColor="@color/text_color1"
+                android:drawableLeft="@drawable/review"
+                android:drawablePadding="@dimen/px_10" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_10"
+                android:layout_marginBottom="@dimen/px_10"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="正在服用"
+                    android:textColor="@color/text_color2"
+                    android:textSize="@dimen/px_16"
+                    android:drawableLeft="@drawable/eating_drug"
+                    android:drawablePadding="@dimen/px_10" />
+
+                <TextView
+                    android:id="@+id/drug_nums"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_10"
+                    android:text="3"
+                    android:textColor="@color/text_color2"
+                    android:textSize="@dimen/px_18" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_10"
+                    android:text="种药品"
+                    android:textColor="@color/text_color2"
+                    android:textSize="@dimen/px_16" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_0.5"
+        android:layout_marginRight="@dimen/px_20"
+        android:background="@color/gray_c4" />
+
+</LinearLayout>

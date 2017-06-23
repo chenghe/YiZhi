@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/content_act_shopping_cart"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/most_bg"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_act_shopping_cart"
+    tools:context="com.zhongmeban.shopmodle.activity.ActShoppingCart">
+
+    <LinearLayout
+        android:id="@+id/id_act_shopping_cart_login"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="48dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/select_btn_edge_color_touming"
+            android:text="登陆"/>
+
+        <TextView
+            android:layout_marginLeft="26dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="登陆后可以同步购物车"/>
+    </LinearLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/id_refresh"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/id_act_shopping_cart_login">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/id_act_shopping_cart_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="48dp"
+            />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/id_shop_accounts"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.zhongmeban.utils.SmoothCheckBox
+                android:id="@+id/id_shop_accounts_checkbox"
+                android:layout_gravity="center_vertical"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="7dp"
+                app:color_checked="@color/app_green"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/text_one"
+                android:text="全选"/>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="合计：￥88"
+                    android:gravity="center"
+                    android:textColor="@color/app_green"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/id_act_shopping_cart_accounts"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="结算（10）"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:background="@drawable/button_green"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/id_act_shopping_cart_accounts_delete"
+                android:layout_width="68dp"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:text="删除"
+                android:textColor="@color/white"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:layout_gravity="right"
+                android:background="@color/app_green"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_above="@+id/id_shop_accounts"
+        android:background="@color/divider_line"></View>
+
+    <include layout="@layout/include_empty_view"/>
+
+</RelativeLayout>

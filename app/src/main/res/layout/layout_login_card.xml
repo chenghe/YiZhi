@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#33000000">
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_num"
+        app:cardBackgroundColor="@color/white"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="3dp"
+        app:cardUseCompatPadding="true"
+        android:visibility="visible">
+        <RelativeLayout
+            android:id="@+id/rl_num"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tv_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="快捷登录"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:textSize="20sp"
+                android:textColor="@color/black"/>
+            <ImageView
+                android:id="@+id/iv_login_close"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/close_login"/>
+            <TextView
+                android:id="@+id/tv_error_num"
+                android:layout_below="@+id/tv_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_centerHorizontal="true"
+                android:text="手机号码有误"
+                android:textColor="@color/num_color"
+                android:textSize="11sp"
+                android:visibility="invisible"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_phone"
+                android:layout_below="@+id/tv_error_num"
+                android:layout_width="230dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_box_green"
+                android:layout_centerHorizontal="true">
+            <EditText
+                android:id="@+id/ed_num"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:hint="请输入手机号"
+                android:singleLine="true"
+                android:maxLength="11"
+                android:paddingLeft="10dp"
+                android:textSize="14sp"
+                android:numeric="integer"
+                android:background="@color/white"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"/>
+                <ImageView
+                    android:id="@+id/iv_phone_clear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:src="@drawable/ic_search_clear"
+                    android:visibility="gone" />
+                </RelativeLayout>
+        <Button
+            android:id="@+id/bt_num"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:layout_width="240dp"
+            android:layout_height="40dp"
+            android:text="获取验证码"
+            android:textColor="@color/white"
+            android:background="@drawable/button_green_noripple"/>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_pass"
+        app:cardBackgroundColor="@color/white"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="3dp"
+        app:cardUseCompatPadding="true"
+        android:visibility="invisible">
+        <RelativeLayout
+            android:id="@+id/rl_pass"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/back_login"/>
+            <ImageView
+                android:id="@+id/iv_pass_close"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/close_login"/>
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="请输入验证码"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:textSize="20sp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/tv_pass_phone"
+                android:layout_below="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_centerHorizontal="true"
+                android:text="13511043661"
+                android:textColor="@color/content_two"/>
+            <!-- 6位密码框布局，需要一个圆角边框的shape作为layout的背景 -->
+
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="46dp"
+                android:layout_marginBottom="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/psw_input_area_bg"
+                android:orientation="horizontal">
+
+                <!-- inputType设置隐藏密码明文
+                     textSize设置大一点，否则“点”太小了，不美观 -->
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tv_pass1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="18sp" />
+                </FrameLayout>
+
+                <View
+                    android:layout_width="0.66dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="0.66dp"
+                    android:layout_marginTop="0.66dp"
+                    android:background="#eeeeee" />
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tv_pass2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="18sp" />
+
+                </FrameLayout>
+
+
+                <View
+                    android:layout_width="0.66dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="0.66dp"
+                    android:layout_marginTop="0.66dp"
+                    android:background="#eeeeee" />
+
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tv_pass3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="18sp" />
+
+
+                </FrameLayout>
+
+                <View
+                    android:layout_width="0.66dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="0.66dp"
+                    android:layout_marginTop="0.66dp"
+                    android:background="#eeeeee" />
+
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tv_pass4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="18sp" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+            <Button
+                android:id="@+id/bt_pass"
+                android:layout_below="@+id/tv_pass_phone"
+                android:layout_centerHorizontal="true"
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:text="获取验证码"
+                android:textSize="11sp"/>
+        </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+    <com.zhongmeban.view.VirtualKeyboardView
+        android:id="@+id/virtualKeyboardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"/>
+</FrameLayout>

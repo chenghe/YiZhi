@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--关注模块首页-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true">
+
+<RelativeLayout
+    android:id="@+id/rl_title"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:gravity="center_vertical"
+    android:background="@color/white">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textColor="@color/top_text"
+        android:textSize="18sp"
+        android:text="我的关注"/>
+    <TextView
+        android:id="@+id/tv_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_centerVertical="true"
+        android:textSize="18sp"
+        android:textColor="@color/main_color"
+        android:text="新增"
+        android:visibility="gone"/>
+    <ImageView
+        android:id="@+id/iv_more"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/more1"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/divider_line" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_none_attention"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_title"
+        android:background="@color/white"
+        android:visibility="gone">
+        <ImageView
+            android:id="@+id/iv_no_attention"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="140dp"
+            android:src="@drawable/no_attention"
+            android:layout_centerHorizontal="true"/>
+        <LinearLayout
+            android:id="@+id/ll_no_attention"
+            android:layout_below="@+id/iv_no_attention"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_no_attention"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="点击"
+                android:gravity="center"
+                android:textColor="@color/main_color"
+                android:textSize="22sp"/>
+
+            <TextView
+                android:id="@+id/tv_add_attention"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:text="新增"
+                android:textSize="22sp"
+                android:gravity="center"
+                android:textColor="@color/main_color"
+               />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="可添加患者"
+                android:gravity="center"
+                android:textColor="@color/main_color"
+                android:textSize="22sp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_no_attention_info"
+            android:layout_below="@+id/ll_no_attention"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="16sp"
+            android:text="您也可以进入首页体验更多功能"
+            android:textColor="@color/top_text"/>
+    </RelativeLayout>
+<include
+    layout="@layout/attention_content" />
+</RelativeLayout>

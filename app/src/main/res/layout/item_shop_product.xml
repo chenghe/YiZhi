@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:background="#fff"
+    android:elevation="0.2dp"
+    android:layout_marginLeft="0.3dp"
+    android:layout_marginRight="0.3dp"
+    android:layout_marginTop="0.3dp"
+    android:layout_marginBottom="0.3dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ImageView
+            android:id="@+id/id_item_shop_home_iv_land"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:scaleType="fitXY"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/test"/>
+
+        <TextView
+            android:layout_below="@+id/id_item_shop_home_iv_land"
+            android:id="@+id/id_item_shop_home_product_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:layout_marginRight="48dp"
+            android:padding="8dp"
+            android:layout_marginLeft="4dp"
+            android:text="灵芝孢子粉"
+            android:textColor="@color/text_one"
+            android:ellipsize="end"/>
+
+        <TextView
+            android:layout_below="@+id/id_item_shop_home_product_tv_name"
+            android:id="@+id/id_item_shop_home_product_tv_price"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥ 150"
+            android:textColor="@color/app_green"/>
+
+        <ImageView
+            android:layout_below="@+id/id_item_shop_home_iv_land"
+            android:padding="18dp"
+            android:id="@+id/id_item_shop_home_product_iv_add"
+            android:src="@drawable/ic_shop_green_cart"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnWidth="@dimen/px_150"
+        android:layout_marginTop="@dimen/px_25"
+        android:gravity="top"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:scaleType="centerInside"
+        android:background="@color/calendar_bg"
+        android:numColumns="3"
+        android:stretchMode="columnWidth" />
+
+   <!-- <TextView
+        android:id="@+id/tvText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="@dimen/px_5" />-->
+
+</RelativeLayout>

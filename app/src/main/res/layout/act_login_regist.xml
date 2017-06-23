@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/login"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/tv_login_en"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/iv_icon"
+        android:textSize="28sp"
+        android:text="Application"/>
+
+    <TextView
+        android:id="@+id/tv_login_cn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tv_login_en"
+        android:textSize="24sp"
+        android:text="登陆/注册"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_num"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/tv_login_cn">
+        <TextView
+            android:id="@+id/tv_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@color/content_two"
+            android:textSize="16sp"
+            android:text="手机号" />
+        <EditText
+            android:id="@+id/et_phone_num"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_num"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:maxLength="15"
+            android:textSize="16sp"
+            android:textColor="@color/top_text"
+            android:background="@color/white"
+            android:numeric="integer"
+            />
+        <EditText
+            android:id="@+id/et_pass_num"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:maxLength="15"
+            android:textSize="16sp"
+            android:hint="请输入验证码"
+            android:textColor="@color/top_text"
+            android:background="@color/white"
+            android:numeric="integer"
+            android:visibility="gone" />
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/divider_line" />
+        </RelativeLayout>
+
+    <Button
+        android:id="@+id/bt_getnum"
+        android:layout_below="@+id/rl_num"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:text="获取验证码"
+        android:background="@drawable/bg_box"
+        android:textColor="@color/main_color"/>
+    <Button
+        android:id="@+id/bt_skip"
+        android:layout_below="@+id/bt_getnum"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:text="跳过"
+        android:background="@drawable/bg_box"
+        android:textColor="@color/main_color"/>
+
+    <TextView
+        android:id="@+id/tv_company"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:textColor="@color/top_text"
+        android:text="ideabinder"/>
+</RelativeLayout>

@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_title1"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/title_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/nail6"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:text="器官功能"
+            android:textColor="@color/content_two"
+            android:textSize="15sp"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_line"/>
+
+    <com.zhongmeban.view.TextViewExpandableAnimation
+        android:id="@+id/tv_organ_function"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tvea_textContentSize="@dimen/text_content_size"
+        app:tvea_expandLines="3"
+        app:tvea_textExpand="@string/expand"
+        app:tvea_textShrink="@string/shrink"
+        android:textColor="@color/little_black"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"></com.zhongmeban.view.TextViewExpandableAnimation>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_line"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:paddingLeft="20dp"
+        android:background="@color/title_bg"
+        android:text="疾病讲解"
+        android:gravity="center_vertical"
+        android:textSize="15sp"
+        android:drawablePadding="8dp"
+        android:textColor="@color/content_two"
+        android:drawableLeft="@drawable/nail4"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_line"/>
+
+    <com.zhongmeban.view.TextViewExpandableAnimation
+        android:id="@+id/tv_disease_explain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tvea_textContentSize="@dimen/text_content_size"
+        app:tvea_expandLines="3"
+        app:tvea_textExpand="@string/expand"
+        app:tvea_textShrink="@string/shrink"
+        android:textColor="@color/little_black"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"></com.zhongmeban.view.TextViewExpandableAnimation>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_line"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:paddingLeft="20dp"
+        android:background="@color/title_bg"
+        android:text="分类分型"
+        android:gravity="center_vertical"
+        android:textSize="15sp"
+        android:drawablePadding="8dp"
+        android:textColor="@color/content_two"
+        android:drawableLeft="@drawable/nail3"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_line"/>
+
+    <com.zhongmeban.view.TextViewExpandableAnimation
+        android:id="@+id/tv_mode_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tvea_textContentSize="@dimen/text_content_size"
+        app:tvea_expandLines="3"
+        app:tvea_textExpand="@string/expand"
+        app:tvea_textShrink="@string/shrink"
+        android:textColor="@color/little_black"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"></com.zhongmeban.view.TextViewExpandableAnimation>
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_line"/>
+
+    <LinearLayout
+        android:id="@+id/ll_title2"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/title_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/nail2"/>
+
+        <TextView
+            android:id="@+id/tv_title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:text="常见症状"
+            android:textColor="@color/content_two"
+            android:textSize="15sp"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_line"/>
+
+    <com.zhongmeban.view.TextViewExpandableAnimation
+        android:id="@+id/tv_symptom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tvea_textContentSize="@dimen/text_content_size"
+        app:tvea_expandLines="3"
+        app:tvea_textExpand="@string/expand"
+        app:tvea_textShrink="@string/shrink"
+        android:textColor="@color/little_black"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"></com.zhongmeban.view.TextViewExpandableAnimation>
+
+    <View
+        android:id="@+id/line4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/title_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/nail1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:text="定性诊断方法"
+            android:textColor="@color/content_two"
+            android:textSize="15sp"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line5"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_line"/>
+
+    <me.next.tagview.TagCloudView
+        android:id="@+id/tag_cloud_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/expend_tag_size"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white"
+        app:tcvItemBorderHorizontal="8dp"
+        app:tcvItemBorderVertical="6dp"
+        app:tcvBorder="8dp"
+        app:tcvBackground="@drawable/background_tag_selector"
+        app:tcvTextColor="#5c799c"
+        app:tcvSingleLine="false"
+        app:tcvCanTagClick="false"/>
+
+    <LinearLayout
+        android:id="@+id/id_expend_layout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_margin="4dp"
+        android:paddingBottom="8dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/id_expend_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/expend_text_color"
+            android:text="展开"/>
+
+        <ImageView
+            android:id="@+id/id_expend_iv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:src="@drawable/open"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_line"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:paddingLeft="20dp"
+        android:background="@color/title_bg"
+        android:text="定量诊断方法"
+        android:gravity="center_vertical"
+        android:textSize="15sp"
+        android:drawablePadding="8dp"
+        android:textColor="@color/content_two"
+        android:drawableLeft="@drawable/nail5"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_line"/>
+
+    <me.next.tagview.TagCloudView
+        android:id="@+id/tag_cloud_view2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/expend_tag_size"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white"
+        app:tcvItemBorderHorizontal="8dp"
+        app:tcvItemBorderVertical="6dp"
+        app:tcvBorder="8dp"
+        app:tcvBackground="@drawable/background_tag_selector"
+        app:tcvTextColor="#5c799c"
+        app:tcvSingleLine="false"
+        app:tcvCanTagClick="false"/>
+
+    <LinearLayout
+        android:id="@+id/id_expend_layout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_margin="4dp">
+
+        <TextView
+            android:id="@+id/id_expend_tv2"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="展开"
+            android:textColor="@color/expend_text_color"/>
+
+        <ImageView
+            android:id="@+id/id_expend_iv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:src="@drawable/open"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line6"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/title_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/nail6"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:text="分期症状"
+            android:textColor="@color/content_two"
+            android:textSize="15sp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:text="早"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="@color/attention_blue"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/circie_empty"/>
+
+        <TextView
+            android:id="@+id/id_tv_stage0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:lineSpacingExtra="5dp"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/little_black"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:text="中"
+            android:textColor="@color/attention_blue"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/circie_empty"/>
+
+        <TextView
+            android:id="@+id/id_tv_stage1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:lineSpacingExtra="5dp"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/little_black"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:text="晚"
+            android:textColor="@color/attention_blue"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/circie_empty"/>
+
+        <TextView
+            android:id="@+id/id_tv_stage2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:lineSpacingExtra="5dp"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/little_black"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_line"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:paddingLeft="20dp"
+        android:background="@color/title_bg"
+        android:text="TNM分期"
+        android:gravity="center_vertical"
+        android:textSize="15sp"
+        android:drawablePadding="8dp"
+        android:textColor="@color/content_two"
+        android:drawableLeft="@drawable/nail4"/>
+
+    <com.zhongmeban.view.ScrollLinearLayout
+        android:id="@+id/external_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_line"/>
+
+</LinearLayout>
+

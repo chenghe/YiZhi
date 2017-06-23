@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?><!--药品索引，带checkbox-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:background="@drawable/selector_enter"
+    android:gravity="center_vertical"
+    tools:ignore="RtlHardcoded">
+
+    <TextView
+        android:id="@+id/tv_marler_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:textSize="16sp"
+        android:singleLine="true"
+        android:maxWidth="250dp"
+        android:textColor="@color/text_one"
+        android:text="艾司唑仑片"/>
+
+    <com.zhongmeban.utils.SmoothCheckBox
+        android:layout_alignParentRight="true"
+        android:id="@+id/cb_marler_select"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="right"
+        app:color_checked="#58c4a5"
+        android:clickable="false"
+        app:can_click="false"/>
+
+</RelativeLayout>

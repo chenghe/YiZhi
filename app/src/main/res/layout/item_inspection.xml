@@ -1,0 +1,37 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/px_120"
+    android:background="@color/calendar_bg">
+
+    <!--<ImageView
+        android:id="@+id/image_collect"
+        android:layout_width="@dimen/px_40"
+        android:layout_height="@dimen/px_40"
+        android:src="@drawable/uncollect"
+        android:scaleType="fitXY"
+        android:layout_marginRight="@dimen/px_20"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true" />-->
+
+    <TextView
+        android:id="@+id/tv_inspection"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/inspection"
+        android:textColor="@color/little_black"
+        android:layout_toLeftOf="@id/image_collect"
+        android:paddingLeft="@dimen/px_40"
+        android:paddingTop="@dimen/px_20"
+        android:paddingBottom="@dimen/px_20"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/px_24" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_1"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gray_c4"/>
+
+</RelativeLayout>

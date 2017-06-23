@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/title_bar_layout" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/collection"
+                android:layout_width="@dimen/px_80"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/px_20"
+                android:paddingBottom="@dimen/px_20"
+                android:src="@drawable/collected"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/collection"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/px_20"
+                android:layout_marginLeft="@dimen/px_40"
+                android:layout_marginBottom="@dimen/px_20">
+
+                <TextView
+                    android:id="@+id/tvName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/px_10"
+                    android:textSize="@dimen/px_26"
+                    android:textColor="@color/main_color"
+                    android:text="" />
+
+                <!--<TextView
+                    android:id="@+id/tvProcess"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/green_tab_bg"
+                    android:textSize="@dimen/px_16"
+                    android:text=""
+                    android:textColor="@color/white"/>  -->
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_0.5"
+            android:background="@color/gray_c4" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_40"
+            android:layout_marginRight="@dimen/px_40"
+            android:layout_marginTop="@dimen/px_20"
+            android:layout_marginBottom="@dimen/px_20"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/overview"
+                android:textColor="@color/main_color"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/tvOverview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_10"
+                android:text=""
+                android:singleLine="false"
+                android:textColor="@color/little_black"
+                android:lineSpacingExtra="@dimen/px_5" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_0.5"
+            android:background="@color/gray_c4" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_40"
+            android:layout_marginRight="@dimen/px_40"
+            android:layout_marginTop="@dimen/px_20"
+            android:layout_marginBottom="@dimen/px_20"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/advantage"
+                android:textColor="@color/main_color"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/tvAdvantage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_10"
+                android:text=""
+                android:singleLine="false"
+                android:textColor="@color/little_black"
+                android:lineSpacingExtra="@dimen/px_5" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_0.5"
+            android:background="@color/gray_c4" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_40"
+            android:layout_marginRight="@dimen/px_40"
+            android:layout_marginTop="@dimen/px_20"
+            android:layout_marginBottom="@dimen/px_20"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/disadvantage"
+                android:textColor="@color/main_color"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/tvDisadvantage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_10"
+                android:text=""
+                android:singleLine="false"
+                android:textColor="@color/little_black"
+                android:lineSpacingExtra="@dimen/px_5" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_0.5"
+            android:background="@color/gray_c4" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_40"
+            android:layout_marginRight="@dimen/px_40"
+            android:layout_marginTop="@dimen/px_20"
+            android:layout_marginBottom="@dimen/px_20"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/prepare"
+                android:textColor="@color/main_color"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/tvPrepare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_10"
+                android:text=""
+                android:singleLine="false"
+                android:textColor="@color/little_black"
+                android:lineSpacingExtra="@dimen/px_5" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_0.5"
+            android:background="@color/gray_c4" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_40"
+            android:layout_marginRight="@dimen/px_40"
+            android:layout_marginTop="@dimen/px_20"
+            android:layout_marginBottom="@dimen/px_20"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/operateDuring"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/operateDuring"
+                android:textColor="@color/main_color"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/tvOperateDuration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_10"
+                android:text=""
+                android:singleLine="false"
+                android:textColor="@color/little_black"
+                android:lineSpacingExtra="@dimen/px_5" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_0.5"
+            android:background="@color/gray_c4"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_40"
+            android:layout_marginRight="@dimen/px_40"
+            android:layout_marginTop="@dimen/px_20"
+            android:layout_marginBottom="@dimen/px_20"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/interval"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/convalescence"
+                android:textColor="@color/main_color"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/tvInterval"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_10"
+                android:singleLine="false"
+                android:textColor="@color/little_black"
+                android:lineSpacingExtra="@dimen/px_5" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

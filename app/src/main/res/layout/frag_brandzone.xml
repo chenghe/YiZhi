@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <GridView
+        android:id="@+id/content_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:paddingLeft="@dimen/px_15"
+        android:paddingRight="@dimen/px_15"
+        android:horizontalSpacing="@dimen/px_25"
+        android:background="@color/white"
+        android:gravity="top"
+        android:numColumns="3"
+        android:stretchMode="columnWidth" />
+
+</RelativeLayout>

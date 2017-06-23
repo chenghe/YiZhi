@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/content_act_product_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_act_product_detail"
+    tools:context="com.zhongmeban.shopmodle.activity.ActProductDetail">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/id_act_product_detail_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="49dp">
+
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:id="@+id/id_shop_cat"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/id_act_product_detail_love"
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:src="@drawable/select_love_product"
+            android:layout_weight="1"/>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2">
+
+            <ImageView
+                android:id="@+id/id_act_product_detail_shop_cat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="4dp"
+                android:src="@drawable/shopping_cart"
+                />
+
+            <TextView
+                android:id="@+id/id_act_product_detail_shop_cat_quantity"
+                android:text=""
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="4dp"
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                android:background="@drawable/shape_shop_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/id_act_product_detail_add_shop_cat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="加入购物车"
+            android:layout_weight="2"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:background="#56e6004a"/>
+
+        <Button
+            android:id="@+id/id_act_product_detail_submit_order"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="续两秒"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:background="#e6004a"
+            android:layout_weight="2"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_above="@+id/id_shop_cat"
+        android:background="@color/divider_line"></View>
+</RelativeLayout>

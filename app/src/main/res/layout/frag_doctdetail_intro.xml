@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/calendar_bg"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_30"
+            android:layout_marginRight="@dimen/px_30"
+            android:layout_marginTop="@dimen/px_20"
+            android:background="@color/white">
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/image_doct"
+                android:layout_width="@dimen/px_80"
+                android:layout_height="@dimen/px_120"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/px_15"
+                android:layout_marginLeft="@dimen/px_5"
+                android:scaleType="fitCenter"
+                android:src="@drawable/demo" />
+
+            <ImageView
+                android:id="@+id/image_collect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/px_15"
+                android:layout_marginTop="@dimen/px_10"
+                android:src="@drawable/uncollect" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/px_10"
+                android:layout_toLeftOf="@id/image_collect"
+                android:layout_toRightOf="@id/image_doct"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/doct_Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/px_15"
+                    android:text="马晓燕-主治医师"
+                    android:textColor="@color/little_black"
+                    android:textSize="@dimen/px_24" />
+
+                <TextView
+                    android:id="@+id/doct_Hospital"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/px_10"
+                    android:drawableLeft="@drawable/icon_hospital"
+                    android:drawablePadding="@dimen/px_10"
+                    android:textColor="@color/little_black"
+                    android:text="北京朝阳医院" />
+
+                <TextView
+                    android:id="@+id/doct_Can"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/px_10"
+                    android:drawableLeft="@drawable/canoperation"
+                    android:drawablePadding="@dimen/px_10"
+                    android:textColor="@color/little_black"
+                    android:text="可手术" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_30"
+            android:layout_marginTop="@dimen/px_20"
+            android:text="@string/introduce"
+            android:textColor="@color/main_color"
+            android:textSize="@dimen/px_18" />
+
+        <TextView
+            android:id="@+id/tv_introduce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_30"
+            android:layout_marginRight="@dimen/px_30"
+            android:layout_marginTop="@dimen/px_15"
+            android:lineSpacingExtra="@dimen/px_8"
+            android:singleLine="false"
+            android:textColor="@color/little_black"
+            android:text="" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_0.5"
+            android:layout_marginTop="@dimen/px_25"
+            android:background="@color/gray_c4" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_30"
+            android:layout_marginTop="@dimen/px_20"
+            android:text="@string/goodat"
+            android:textColor="@color/main_color"
+            android:textSize="@dimen/px_18" />
+
+        <TextView
+            android:id="@+id/tv_goodat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_30"
+            android:layout_marginRight="@dimen/px_30"
+            android:layout_marginTop="@dimen/px_15"
+            android:lineSpacingExtra="@dimen/px_8"
+            android:singleLine="false"
+            android:textColor="@color/little_black"
+            android:text="" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_0.5"
+            android:layout_marginTop="@dimen/px_25"
+            android:background="@color/gray_c4" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_30"
+            android:layout_marginTop="@dimen/px_20"
+            android:text="@string/operation"
+            android:textColor="@color/main_color"
+            android:textSize="@dimen/px_18" />
+
+        <TextView
+            android:id="@+id/tv_operation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_30"
+            android:layout_marginRight="@dimen/px_30"
+            android:layout_marginTop="@dimen/px_15"
+            android:paddingBottom="@dimen/px_30"
+            android:lineSpacingExtra="@dimen/px_8"
+            android:singleLine="false"
+            android:textColor="@color/little_black"
+            android:text="" />
+
+    </LinearLayout>
+</ScrollView>

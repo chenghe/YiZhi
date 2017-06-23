@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/calendar_bg"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <!--<ImageView
+        android:id="@+id/image_collect"
+        android:layout_width="@dimen/px_40"
+        android:layout_height="@dimen/px_40"
+        android:src="@drawable/uncollect"
+        android:scaleType="fitXY"
+        android:layout_marginRight="@dimen/px_20"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true" />-->
+
+    <TextView
+        android:id="@+id/catalog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="@dimen/px_40"
+        android:background="#E0E0E0"
+        android:textColor="#454545"
+        android:layout_weight="1.0"
+        android:paddingLeft="@dimen/px_20"
+        android:paddingTop="@dimen/px_10"
+        android:paddingBottom="@dimen/px_10"
+        android:text="A" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/px_20"
+        android:paddingBottom="@dimen/px_10"
+        android:layout_marginRight="@dimen/px_40"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_drug_name"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:text="鳝丝大"
+            android:textColor="@color/little_black"
+            android:layout_marginTop="@dimen/px_15"
+            android:textSize="@dimen/px_24" />
+
+        <TextView
+            android:id="@+id/tv_chemical_name"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="注射用盐酸益达必行"
+            android:textColor="@color/content_two"
+            android:layout_marginTop="@dimen/px_5"
+            android:textSize="@dimen/px_18" />
+
+        <TextView
+            android:id="@+id/tv_drug_price"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="2000-3000元"
+            android:textColor="@color/main_color"
+            android:layout_marginTop="@dimen/px_10"
+            android:textSize="@dimen/px_18" />
+
+    </LinearLayout>
+
+</LinearLayout>

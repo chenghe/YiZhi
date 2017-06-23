@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/id_item_order_product_cardview"
+            android:layout_marginLeft="8dp"
+            android:layout_width="90dp"
+            app:cardElevation="0dp"
+            android:layout_height="90dp"
+            android:background="#fff"
+            android:layout_centerVertical="true"
+            >
+
+            <ImageView
+                android:id="@+id/id_item_order_product_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/test"/>
+
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:id="@+id/id_item_order_product_name"
+            android:layout_toRightOf="@+id/id_item_order_product_cardview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:text="班德尔科技"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textColor="@color/text_one"/>
+
+
+        <TextView
+            android:id="@+id/id_item_order_product_price"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/id_item_order_product_cardview"
+            android:layout_marginLeft="8dp"
+            android:padding="8dp"
+            android:text="￥ 150"
+            android:textColor="@color/app_green"/>
+        <TextView
+            android:id="@+id/id_item_order_product_number"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="x6"
+            android:textColor="@color/content_two"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="12dp"
+        android:background="@color/divider_line"/>
+</LinearLayout>

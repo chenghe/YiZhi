@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:scrollbars="none">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_300"
+            android:background="#00ffff">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/btn_left"
+                    android:layout_width="@dimen/px_72"
+                    android:layout_height="@dimen/px_72"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="@android:color/transparent"
+                    android:clickable="true"
+                    android:paddingRight="@dimen/px_24"
+                    android:src="@drawable/back"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/doct_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="张三"
+                    android:textColor="@color/content_two"
+                    android:textSize="18sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/doct_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="主任医师"
+                    android:textColor="@color/content_two"
+                    android:layout_marginTop="3dp"
+                    android:layout_below="@id/doct_name"
+                    android:layout_centerHorizontal="true"/>
+
+                <ImageButton
+                    android:id="@+id/btn_right"
+                    android:layout_width="@dimen/px_67"
+                    android:layout_height="@dimen/px_67"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@android:color/transparent"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/more1"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="bottom|center_horizontal">
+                <ImageView
+                    android:id="@+id/doct_image"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/demo"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="fitCenter"/>
+
+                <TextView
+                    android:id="@+id/tv_commed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@id/doct_image"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="12sp"
+                    android:textColor="@color/content_two"/>
+
+                <TextView
+                    android:id="@+id/tv_can_operate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/tab_bg2"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@id/tv_commed"
+                    android:layout_centerHorizontal="true"
+                    android:text="可手术"
+                    android:textSize="8sp"/>
+
+            </RelativeLayout>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_52"
+            android:background="@color/top_bg"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/rl_introduce"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_introduce"
+                    style="@style/style_text_selected"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/overview" />
+
+                <View
+                    android:id="@+id/v_introduce"
+                    android:layout_width="@dimen/px_80"
+                    android:layout_height="@dimen/px_3"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/btn_indiator"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_medical_case"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_medical_case"
+                    style="@style/style_text_unselect"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/medical_case" />
+
+                <View
+                    android:id="@+id/v_medical_case"
+                    android:layout_width="@dimen/px_80"
+                    android:layout_height="@dimen/px_3"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/btn_indiator"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_visits"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_visits"
+                    style="@style/style_text_unselect"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/visits" />
+
+                <View
+                    android:id="@+id/v_visits"
+                    android:layout_width="@dimen/px_80"
+                    android:layout_height="@dimen/px_3"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/btn_indiator"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_0.5"
+            android:background="@color/gray_c4" />
+
+        <FrameLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/px_100"
+    android:paddingLeft="@dimen/px_20"
+    android:paddingRight="@dimen/px_20"
+    android:paddingTop="@dimen/px_15"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/tv_bed_nums"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:text="0床位"
+        android:layout_centerVertical="true"
+        android:textColor="@color/main_color"
+        android:layout_alignParentRight="true"
+        android:textSize="@dimen/px_20" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@id/tv_bed_nums"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="@dimen/px_15"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_department"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="妇科" />
+
+        <TextView
+            android:id="@+id/tv_update_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="妇科"
+            android:layout_marginTop="@dimen/px_10"
+            android:textSize="@dimen/px_16" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_0.5"
+        android:background="@color/gray_c4"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
